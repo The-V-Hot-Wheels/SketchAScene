@@ -22,6 +22,7 @@ struct GenreRowView: View {
                     Image("comdey")
                     Text("comedy")
                         .foregroundColor(.appbrown)
+                        .font(Font.custom("kindergarten", size: 22))
                 }
                 
                 

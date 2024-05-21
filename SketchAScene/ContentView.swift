@@ -25,6 +25,7 @@ struct ContentView: View {
                     .font(.title)
                     .padding(100)
                     .foregroundColor(.appbrown)
+                   
                
                Spacer()
                 
