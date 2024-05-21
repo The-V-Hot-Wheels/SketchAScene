@@ -15,6 +15,10 @@
 		513127A82BFBD6870071C615 /* SketchASceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513127A72BFBD6870071C615 /* SketchASceneUITests.swift */; };
 		513127AA2BFBD6870071C615 /* SketchASceneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513127A92BFBD6870071C615 /* SketchASceneUITestsLaunchTests.swift */; };
 		513127B72BFBD75F0071C615 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 513127B62BFBD75F0071C615 /* .gitignore */; };
+		513127BA2BFD11E10071C615 /* GenreRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513127B92BFD11E10071C615 /* GenreRowView.swift */; };
+		513127C52BFD1B190071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
+		513127C62BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
+		513127C72BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,9 @@
 		513127A92BFBD6870071C615 /* SketchASceneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchASceneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		513127B62BFBD75F0071C615 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		513127B82BFBD81C0071C615 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		513127B92BFD11E10071C615 /* GenreRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRowView.swift; sourceTree = "<group>"; };
+		513127C22BFD1AB40071C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		513127C42BFD1B0C0071C615 /* kindergarten.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kindergarten.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +106,13 @@
 		5131278B2BFBD6860071C615 /* SketchAScene */ = {
 			isa = PBXGroup;
 			children = (
+				513127C22BFD1AB40071C615 /* Info.plist */,
 				5131278C2BFBD6860071C615 /* SketchASceneApp.swift */,
 				5131278E2BFBD6860071C615 /* ContentView.swift */,
 				513127902BFBD6870071C615 /* Assets.xcassets */,
 				513127922BFBD6870071C615 /* Preview Content */,
+				513127B92BFD11E10071C615 /* GenreRowView.swift */,
+				513127C32BFD1B030071C615 /* projectFonts */,
 			);
 			path = SketchAScene;
 			sourceTree = "<group>";
@@ -130,6 +140,14 @@
 				513127A92BFBD6870071C615 /* SketchASceneUITestsLaunchTests.swift */,
 			);
 			path = SketchASceneUITests;
+			sourceTree = "<group>";
+		};
+		513127C32BFD1B030071C615 /* projectFonts */ = {
+			isa = PBXGroup;
+			children = (
+				513127C42BFD1B0C0071C615 /* kindergarten.ttf */,
+			);
+			path = projectFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +256,7 @@
 			files = (
 				513127942BFBD6870071C615 /* Preview Assets.xcassets in Resources */,
 				513127B72BFBD75F0071C615 /* .gitignore in Resources */,
+				513127C52BFD1B190071C615 /* kindergarten.ttf in Resources */,
 				513127912BFBD6870071C615 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513127C62BFD1B1A0071C615 /* kindergarten.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513127C72BFD1B1A0071C615 /* kindergarten.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513127BA2BFD11E10071C615 /* GenreRowView.swift in Sources */,
 				5131278F2BFBD6860071C615 /* ContentView.swift in Sources */,
 				5131278D2BFBD6860071C615 /* SketchASceneApp.swift in Sources */,
 			);
@@ -430,6 +452,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SketchAScene/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SketchAScene/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SketchAScene/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SketchAScene/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
