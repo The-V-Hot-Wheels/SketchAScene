@@ -15,28 +15,35 @@ struct GenreRowView: View {
                 Image(systemName: "movieclapper")
                 
                 Text("Action")
-                    .font(Font.custom("kindergarten", size: 22))
                     
-            }
+                    }
+            .font(Font.custom("kindergarten", size: 40))
+            .foregroundColor(.appbrown)
+            Divider()
+           
                 HStack {
                     Image("comdey")
                     Text("comedy")
                         .foregroundColor(.appbrown)
-                        .font(Font.custom("kindergarten", size: 22))
+                        .font(Font.custom("kindergarten", size: 40))
+                    
                 }
+            Divider()
                 
                 
                 HStack {
                     Image("dramma")
                     Text("drama")
                         .foregroundColor(.appbrown)
+                        .font(Font.custom("kindergarten", size: 40))
                 }
-              
+              Divider()
                 
                 HStack {
                     Image("horro")
                     Text("horror")
                         .foregroundColor(.appbrown)
+                        .font(Font.custom("kindergarten", size: 40))
                 }
             
                 
