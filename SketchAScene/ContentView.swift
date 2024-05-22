@@ -21,10 +21,16 @@ struct ContentView: View {
                     .foregroundColor(.appbrown)
 //                Spacer()
                 
-                Text("Pick A Genere")
+                Text("Pick A Genre")
+                    .font(Font.custom("kindergarten", size: 30))
                     .font(.title)
                     .padding(100)
                     .foregroundColor(.appbrown)
+                    
+                                    
+                    
+                    
+                        
                    
                
                Spacer()
