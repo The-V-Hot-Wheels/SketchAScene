@@ -13,9 +13,11 @@ struct GenreRowView: View {
         VStack {
             HStack {
                 Image(systemName: "movieclapper")
+                    .foregroundColor(.appbrown)
                 
                 Text("Action")
                     .font(Font.custom("kindergarten", size: 22))
+                    .foregroundColor(.appbrown)
                     
             }
                 HStack {
