@@ -23,9 +23,10 @@ struct GenreRowView: View {
            
                 HStack {
                     Image("comdey")
-                    Text("comedy")
+                    Text("Comedy")
                         .foregroundColor(.appbrown)
                         .font(Font.custom("kindergarten", size: 40))
+                        .padding([.top, .bottom])
                     
                 }
             Divider()
@@ -33,17 +34,20 @@ struct GenreRowView: View {
                 
                 HStack {
                     Image("dramma")
-                    Text("drama")
+                    Text("Drama")
                         .foregroundColor(.appbrown)
                         .font(Font.custom("kindergarten", size: 40))
+                        .padding([.top, .bottom])
                 }
               Divider()
                 
                 HStack {
                     Image("horro")
-                    Text("horror")
+
+                    Text("Horror")
+                        
                         .foregroundColor(.appbrown)
-                        .font(Font.custom("kindergarten", size: 40))
+                        .font(Font.custom("kindergarten", size: 40)).padding([.top, .bottom])
                 }
             
                 

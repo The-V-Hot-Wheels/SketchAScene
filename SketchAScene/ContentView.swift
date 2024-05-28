@@ -15,17 +15,18 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack {
                 Text("Sketch-A-Scene ")
-                    .font(Font.custom("kindergarten", size: 40))
+                    .font(Font.custom("kindergarten", size: 60))
                     .font(.largeTitle)
                     .padding(20)
                     .foregroundColor(.appbrown)
 //                Spacer()
                 
                 Text("Pick A Genre")
-                    .font(Font.custom("kindergarten", size: 30))
+                    .font(Font.custom("kindergarten", size: 32))
                     .font(.title)
                     .padding(100)
                     .foregroundColor(.appbrown)
+                    .padding([.top, .bottom])
                     
                                     
                     
