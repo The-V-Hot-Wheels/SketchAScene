@@ -10,7 +10,27 @@ import SwiftUI
 struct GenreRowView: View {
     var body: some View {
         
+        HStack{
+      
+        }
+        
         VStack {
+            
+            
+            HStack{
+               
+                
+                Image(systemName: "questionmark.app").font(.custom("", fixedSize: 50))
+                    .foregroundColor(.appbrown)
+                
+                Text("Help")
+                    .font(Font.custom("kindergarten", size: 40))
+                    .foregroundColor(.appbrown)
+            }
+                Divider()
+            
+            
+            
             HStack {
                 Image(systemName: "movieclapper")
                 

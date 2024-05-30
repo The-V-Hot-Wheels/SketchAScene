@@ -34,24 +34,33 @@ struct ContentView: View {
                     .foregroundColor(.appbrown)
                 //                Spacer()
                 
+                
+                
+                
                 Text("Pick A Genre")
                     .font(Font.custom("kindergarten", size: 32))
                     .font(.title)
-                    .padding(100)
+                    .padding(70)
                     .foregroundColor(.appbrown)
                     .padding([.top, .bottom])
                 
                 
+                //Spacer()
                 
-                
-                
-                
-                
-                Spacer()
+               
                 
                 GenreRowView()
                 
                 
+                
+                
+            }
+            
+                
+            } .onReceive(timer) { time in
+                if timeRemaining > 0 {
+                    timeRemaining -= 1
+                }
             }
             
             
@@ -67,11 +76,7 @@ struct ContentView: View {
             
             
         }
-        .onReceive(timer) { time in
-            if timeRemaining > 0 {
-                timeRemaining -= 1
-            }
-        }
+       
         
         
         
@@ -85,7 +90,7 @@ struct ContentView: View {
     //            Text("Hello, world!")
     //        }
     //        .padding()
-}
+
     
     
    
