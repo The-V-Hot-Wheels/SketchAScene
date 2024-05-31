@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0654E6A32C07A1E4003960C0 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654E6A22C07A1E4003960C0 /* GameTimer.swift */; };
 		0658556F2C064B5000B8AEDD /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658556E2C064B5000B8AEDD /* theme.swift */; };
 		065855712C064F5400B8AEDD /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855702C064F5400B8AEDD /* DailyScrum.swift */; };
 		065855732C0651A000B8AEDD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855722C0651A000B8AEDD /* CardView.swift */; };
 		065855752C06687200B8AEDD /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855742C06687200B8AEDD /* TrailingIconLabelStyle.swift */; };
 		065855772C06715C00B8AEDD /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855762C06715C00B8AEDD /* ScrumsView.swift */; };
 		065CC0902BFE8CCE00E53F5D /* Timer alarm code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CC08F2BFE8CCE00E53F5D /* Timer alarm code.swift */; };
+		06F05DEC2C0966E70025E65D /* HelpSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F05DEB2C0966E70025E65D /* HelpSheetView.swift */; };
 		5131278D2BFBD6860071C615 /* SketchASceneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5131278C2BFBD6860071C615 /* SketchASceneApp.swift */; };
 		5131278F2BFBD6860071C615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5131278E2BFBD6860071C615 /* ContentView.swift */; };
 		513127912BFBD6870071C615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513127902BFBD6870071C615 /* Assets.xcassets */; };
@@ -47,13 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0654E6A22C07A1E4003960C0 /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
 		0658556E2C064B5000B8AEDD /* theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
 		065855702C064F5400B8AEDD /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		065855722C0651A000B8AEDD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		065855742C06687200B8AEDD /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		065855762C06715C00B8AEDD /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		065CC08F2BFE8CCE00E53F5D /* Timer alarm code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer alarm code.swift"; sourceTree = "<group>"; };
+		06F05DEB2C0966E70025E65D /* HelpSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSheetView.swift; sourceTree = "<group>"; };
 		513127892BFBD6860071C615 /* SketchAScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchAScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5131278C2BFBD6860071C615 /* SketchASceneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchASceneApp.swift; sourceTree = "<group>"; };
 		5131278E2BFBD6860071C615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,10 +148,10 @@
 				065CC08E2BFE8C8E00E53F5D /* Timer Alarm */,
 				513127902BFBD6870071C615 /* Assets.xcassets */,
 				065CC08F2BFE8CCE00E53F5D /* Timer alarm code.swift */,
-				0654E6A22C07A1E4003960C0 /* GameTimer.swift */,
 				0658556D2C064A9300B8AEDD /* models */,
 				513127922BFBD6870071C615 /* Preview Content */,
 				513127B92BFD11E10071C615 /* GenreRowView.swift */,
+				06F05DEB2C0966E70025E65D /* HelpSheetView.swift */,
 				513127C32BFD1B030071C615 /* projectFonts */,
 			);
 			path = SketchAScene;
@@ -325,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F05DEC2C0966E70025E65D /* HelpSheetView.swift in Sources */,
 				513127BA2BFD11E10071C615 /* GenreRowView.swift in Sources */,
 				065855772C06715C00B8AEDD /* ScrumsView.swift in Sources */,
 				065855732C0651A000B8AEDD /* CardView.swift in Sources */,
@@ -332,7 +333,6 @@
 				065855752C06687200B8AEDD /* TrailingIconLabelStyle.swift in Sources */,
 				0658556F2C064B5000B8AEDD /* theme.swift in Sources */,
 				065CC0902BFE8CCE00E53F5D /* Timer alarm code.swift in Sources */,
-				0654E6A32C07A1E4003960C0 /* GameTimer.swift in Sources */,
 				065855712C064F5400B8AEDD /* DailyScrum.swift in Sources */,
 				5131278D2BFBD6860071C615 /* SketchASceneApp.swift in Sources */,
 			);
