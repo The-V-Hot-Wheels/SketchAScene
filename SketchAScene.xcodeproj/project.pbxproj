@@ -26,6 +26,7 @@
 		513127C52BFD1B190071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
 		513127C62BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
 		513127C72BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
+		610D66FA2C0903200011EF43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 610D66F92C0903200011EF43 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		513127B92BFD11E10071C615 /* GenreRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRowView.swift; sourceTree = "<group>"; };
 		513127C22BFD1AB40071C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		513127C42BFD1B0C0071C615 /* kindergarten.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kindergarten.ttf; sourceTree = "<group>"; };
+		610D66F92C0903200011EF43 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		513127802BFBD6860071C615 = {
 			isa = PBXGroup;
 			children = (
+				610D66F92C0903200011EF43 /* LICENSE */,
 				513127B82BFBD81C0071C615 /* README.md */,
 				513127B62BFBD75F0071C615 /* .gitignore */,
 				5131278B2BFBD6860071C615 /* SketchAScene */,
@@ -295,6 +298,7 @@
 				513127B72BFBD75F0071C615 /* .gitignore in Resources */,
 				513127C52BFD1B190071C615 /* kindergarten.ttf in Resources */,
 				513127912BFBD6870071C615 /* Assets.xcassets in Resources */,
+				610D66FA2C0903200011EF43 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
