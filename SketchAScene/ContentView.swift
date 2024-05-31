@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var timeRemaining = 100
+    
+@State private var timeRemaining = 60
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    @Environment(\.scenePhase) var scenePhase
+    @State private var isActive = true
     
     var body: some View {
         
@@ -28,14 +32,12 @@ struct ContentView: View {
                     .clipShape(.capsule)
                 
                 Text("Sketch-A-Scene ")
-                    .font(Font.custom("kindergarten", size: 60))
+                    .font(Font.custom("kindergarten", size: 50))
                     .font(.largeTitle)
                     .padding(20)
                     .foregroundColor(.appbrown)
                 //                Spacer()
-                
-                
-                
+              
                 
                 Text("Pick A Genre")
                     .font(Font.custom("kindergarten", size: 32))
@@ -44,24 +46,29 @@ struct ContentView: View {
                     .foregroundColor(.appbrown)
                     .padding([.top, .bottom])
                 
-                
                 //Spacer()
                 
-               
+           
                 
                 GenreRowView()
-                
-                
-                
-                
-            }
+                }
             
                 
             } .onReceive(timer) { time in
-                if timeRemaining > 0 {
-                    timeRemaining -= 1
+                guard isActive else { return }
+
+                        if timeRemaining > 0 {
+                            timeRemaining -= 1
+                        }
+                    }
+                
+               
                 }
             }
+        
+       
+
+            
             
             
             //                Text("Sketch-A-Scene")
@@ -75,14 +82,14 @@ struct ContentView: View {
             
             
             
-        }
+        
        
         
         
         
         
         
-    }
+    
     //        VStack {
     //            Image(systemName: "globe")
     //                .imageScale(.large)
