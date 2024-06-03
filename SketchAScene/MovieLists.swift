@@ -64,6 +64,52 @@ let matrix = Movie(title: "The Matrix",
                    stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss", 
                    genre: .action, imdbID: "tt0133093")
 
+let shrek = Movie(title: "Shrek",
+                  director: "Andrew Adamson, Vicky Jenson",
+                  writer:"",
+                  stars:"Eddie Murphy, John Lithgow, Mike Myers",
+                  genre: .comedy, imdbID: "tt0126029")
+
+let areWeDoneYet = Movie(title: "Are We Done Yet",
+                         director: "Brian Levant",
+                         writer: "Steven GarY Banks, Claudia  Grazioso",
+                         stars: "Ice Cube, Nia Long, John C. McGinley",
+                         genre: .comedy, imdbID: "tt0422774")
+
+let clueLess = Movie(title: "ClueLess",
+                     director: "Amy Heckerling" ,
+                     writer: "Amy Heckerling",
+                     stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
+                     genre: .comedy, imdbID: "tt0112697")
+
+let projectX = Movie(title: "Project X",
+                     director: "Nima Nourizadeh",
+                     writer: "Micheal Bacall, Matt Drake",
+                     stars: " Dax Flame, Miles Teller, Alexis Knapp",
+                     genre: .comedy, imdbID: "tt1636826")
+
+let schoolDance = Movie(title: "School Dance",
+                        director: "Nick Cannon",
+                        writer: "Nick Cannon",
+                        stars: "Kat Williams, Mike Epps, Bobb'e J Thompson, Kristinan DeBarge",
+                        genre: .comedy, imdbID: "tt2179936")
+
+let familyReunion = Movie(title: "Madea Family Reunion",
+                          director: "Tyler Perry",
+                          writer: "Tyler Perry",
+                          stars: "Blair Underwood, Keke Palmer, Lynn Whitifield",
+                          genre: .comedy, imdbID: "tt0455612")
+
+let cars = Movie(title: "Cars",
+                 director: " Brain Fee",
+                 writer: "John Lasseter" ,
+                 stars: "Bonnie Hunt, Larry the Cable Guy, Owen Wilson",
+                 genre: .comedy, imdbID: "tt0317219")
+
+
+
+
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
