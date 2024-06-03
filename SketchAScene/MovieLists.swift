@@ -116,3 +116,5 @@ let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
 let matrixMovies: [Movie] = [matrix]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
+
+let comdeyMovies: [Movie] = [ cars, familyReunion, areWeDoneYet, schoolDance, projectX, clueLess, shrek]

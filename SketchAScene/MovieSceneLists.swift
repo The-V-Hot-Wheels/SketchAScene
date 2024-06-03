@@ -45,3 +45,6 @@ let comedyScenes: [MovieScene] = []
 let dramaScenes: [MovieScene] = []
 
 let horrorScenes: [MovieScene] = []
+
+
+var moviePrompt = notDroids.sceneDescription
