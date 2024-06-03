@@ -58,8 +58,15 @@ let episodeIX = Movie(title: "Star Wars: Episode IX &mdash; Rise of Skywalker",
                       stars: "Daisy Ridley, John Boyega, Oscar Isaac",
                       genre: .action, imdbID: "tt2527338")
 
+let matrix = Movie(title: "The Matrix", 
+                   director: "Lana Wachowski, Lilly Wachowski",
+                   writer: "Lilly Wachowski, Lana Wachowski",
+                   stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss", 
+                   genre: .action, imdbID: "tt0133093")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
-let actionMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
-                             episodeV, episodeVI]
+let matrixMovies: [Movie] = [matrix]
+
+let actionMovies: [Movie] = starWarsMovies + matrixMovies
