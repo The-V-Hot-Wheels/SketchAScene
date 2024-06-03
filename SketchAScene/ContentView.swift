@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var timeRemaining = 60
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     
