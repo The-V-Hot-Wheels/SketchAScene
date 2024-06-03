@@ -6,44 +6,28 @@
 //
 
 import Foundation
-//struct Movie: Codable {
-//    let title,year, rated, released: String
-//    let poster: String
-//    let description : String
-//    let metascore, imdbRating, imdbVotes, imdbID: String
-//    
-//}
-//
-//struct MovieArray: Codable {
-//    let movie: [Movie]
-//}
 
 struct Movie {
-    var id = UUID()
-    var title: String
-    var genre: MovieGenres
-    var poster: String
-    var description: String
+    
+    /// The title of the movie. For example, *Shrek*.
+    let title: String
+    
+    /// The director of the movie. For example, Andrew Adamson and Vicky Jenson.
+    let director: String
+    
+    /// The author of the movie's screenplay. For example, William Steig, Ted
+    /// Elliott, Terry Rossio.
+    let writer: String
+    
+    /// The main stars of the movie. May be voice actors. For example, Mike
+    /// Myers, Eddie Murphy, Cameron Diaz.
+    let stars: String
+    
+    /// The genre of the movie. For example, comedy.
+    let genre: Genre
+    
+    /// The IMDb ID of the movie. Should generally consist of "tt" followed by a
+    /// zero-padded number. For example, "tt0126029".
+    let imdbID: String
+    
 }
-
-enum MovieGenres: CaseIterable {
-    case comedy
-    case romance
-    case suspense
-}
-
-var movies: [Movie] = [
-    Movie(title: <#T##String#>, genre: <#T##MovieGenres#>, poster: <#T##String#>, description: <#T##String#>),
-   Movie(title: <#T##String#>, genre: <#T##MovieGenres#>, poster: <#T##String#>, description: <#T##String#>),
-   Movie(title: <#T##String#>, genre: <#T##MovieGenres#>, poster: <#T##String#>, description: <#T##String#>),
-]
-
-var comedyMovies = movies.map {$0.genre == .comedy}
-
-//func showComedyMovies
-
-
-
-
-
-

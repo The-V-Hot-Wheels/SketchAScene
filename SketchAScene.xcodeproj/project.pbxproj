@@ -28,6 +28,12 @@
 		513127C62BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
 		513127C72BFD1B1A0071C615 /* kindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513127C42BFD1B0C0071C615 /* kindergarten.ttf */; };
 		610D66FA2C0903200011EF43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 610D66F92C0903200011EF43 /* LICENSE */; };
+		613402802C0E36EE0016DF81 /* TimedDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */; };
+		613402822C0E37330016DF81 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613402812C0E37330016DF81 /* CanvasView.swift */; };
+		61852F6A2C0D6B48009FEFF4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F692C0D6B48009FEFF4 /* Genre.swift */; };
+		61852F6C2C0D6E4A009FEFF4 /* MovieLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */; };
+		61852F6E2C0D6E6D009FEFF4 /* MovieSceneLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */; };
+		61852F702C0D6EBF009FEFF4 /* MovieScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		513127C22BFD1AB40071C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		513127C42BFD1B0C0071C615 /* kindergarten.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kindergarten.ttf; sourceTree = "<group>"; };
 		610D66F92C0903200011EF43 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedDrawingView.swift; sourceTree = "<group>"; };
+		613402812C0E37330016DF81 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		61852F692C0D6B48009FEFF4 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLists.swift; sourceTree = "<group>"; };
+		61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSceneLists.swift; sourceTree = "<group>"; };
+		61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,12 @@
 				513127B92BFD11E10071C615 /* GenreRowView.swift */,
 				06F05DEB2C0966E70025E65D /* HelpSheetView.swift */,
 				513127C32BFD1B030071C615 /* projectFonts */,
+				61852F692C0D6B48009FEFF4 /* Genre.swift */,
+				61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */,
+				61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */,
+				61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */,
+				6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */,
+				613402812C0E37330016DF81 /* CanvasView.swift */,
 			);
 			path = SketchAScene;
 			sourceTree = "<group>";
@@ -331,14 +349,20 @@
 				06F05DEC2C0966E70025E65D /* HelpSheetView.swift in Sources */,
 				513127BA2BFD11E10071C615 /* GenreRowView.swift in Sources */,
 				065855772C06715C00B8AEDD /* ScrumsView.swift in Sources */,
+				61852F6A2C0D6B48009FEFF4 /* Genre.swift in Sources */,
 				510529002C0A69D500ED54A1 /* Timer alarm code.swift in Sources */,
 				065855732C0651A000B8AEDD /* CardView.swift in Sources */,
+				61852F702C0D6EBF009FEFF4 /* MovieScene.swift in Sources */,
 				5131278F2BFBD6860071C615 /* ContentView.swift in Sources */,
 				065855752C06687200B8AEDD /* TrailingIconLabelStyle.swift in Sources */,
 				0658556F2C064B5000B8AEDD /* theme.swift in Sources */,
+				61852F6E2C0D6E6D009FEFF4 /* MovieSceneLists.swift in Sources */,
+				613402802C0E36EE0016DF81 /* TimedDrawingView.swift in Sources */,
 				065855712C064F5400B8AEDD /* DailyScrum.swift in Sources */,
 				510529022C0A6A2B00ED54A1 /* Movie.swift in Sources */,
 				5131278D2BFBD6860071C615 /* SketchASceneApp.swift in Sources */,
+				61852F6C2C0D6E4A009FEFF4 /* MovieLists.swift in Sources */,
+				613402822C0E37330016DF81 /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
