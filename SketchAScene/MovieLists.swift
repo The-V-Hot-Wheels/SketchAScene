@@ -41,6 +41,23 @@ let episodeVI = Movie(title: "Star Wars: Episode VI &mdash; Return of the Jedi",
                       stars: "Mark Hamill, Harrison Ford, Carrie Fisher",
                       genre: .action, imdbID: "tt0086190")
 
+let episodeVII = Movie(title: "Star Wars: Episode VII &mdash; The Force Awakens",
+                       director: "J.&nbsp;J. Abrams", writer: "Lawrence Kasdan, J.&nbsp;J. Abrams, Michael Arndt",
+                       stars: "Daisy Ridley, John Boyega, Oscar Isaac",
+                       genre: .action, imdbID: "tt2488496")
+
+let episodeVIII = Movie(title: "Star Wars: Episode VIII &mdash; The Last Jedi",
+                        director: "Rian Johnson",
+                        writer: "Rian Johnson, George Lucas",
+                        stars: "Daisy Ridley, John Boyega, Mark Hamill",
+                        genre: .action, imdbID: "tt2527336")
+
+let episodeIX = Movie(title: "Star Wars: Episode IX &mdash; Rise of Skywalker",
+                      director: "J.&nbsp;J. Abrams",
+                      writer: "Chris Terrio, J.&nbsp;J. Abrams, Derek Connolly",
+                      stars: "Daisy Ridley, John Boyega, Oscar Isaac",
+                      genre: .action, imdbID: "tt2527338")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
