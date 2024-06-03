@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06174B102C0E4B71008A7247 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06174B0F2C0E4B71008A7247 /* TestView.swift */; };
 		0658556F2C064B5000B8AEDD /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658556E2C064B5000B8AEDD /* theme.swift */; };
 		065855712C064F5400B8AEDD /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855702C064F5400B8AEDD /* DailyScrum.swift */; };
 		065855732C0651A000B8AEDD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065855722C0651A000B8AEDD /* CardView.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06174B0F2C0E4B71008A7247 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		0658556E2C064B5000B8AEDD /* theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
 		065855702C064F5400B8AEDD /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		065855722C0651A000B8AEDD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				513127C22BFD1AB40071C615 /* Info.plist */,
 				5131278C2BFBD6860071C615 /* SketchASceneApp.swift */,
 				5131278E2BFBD6860071C615 /* ContentView.swift */,
+				06174B0F2C0E4B71008A7247 /* TestView.swift */,
 				510529012C0A6A2B00ED54A1 /* Movie.swift */,
 				065CC08E2BFE8C8E00E53F5D /* Timer Alarm */,
 				513127902BFBD6870071C615 /* Assets.xcassets */,
@@ -352,6 +355,7 @@
 				61852F6A2C0D6B48009FEFF4 /* Genre.swift in Sources */,
 				510529002C0A69D500ED54A1 /* Timer alarm code.swift in Sources */,
 				065855732C0651A000B8AEDD /* CardView.swift in Sources */,
+				06174B102C0E4B71008A7247 /* TestView.swift in Sources */,
 				61852F702C0D6EBF009FEFF4 /* MovieScene.swift in Sources */,
 				5131278F2BFBD6860071C615 /* ContentView.swift in Sources */,
 				065855752C06687200B8AEDD /* TrailingIconLabelStyle.swift in Sources */,
