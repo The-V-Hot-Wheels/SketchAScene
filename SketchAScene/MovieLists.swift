@@ -106,6 +106,16 @@ let cars = Movie(title: "Cars",
                  stars: "Bonnie Hunt, Larry the Cable Guy, Owen Wilson",
                  genre: .comedy, imdbID: "tt0317219")
 
+let citizenKane = Movie(title: "Citizen Kane", director: "Orson Welles",
+                        writer: "Herman J. Mankiewicz, Orson Welles, John Houseman",
+                        stars: "Orson Welles, Joseph Cotten, Dorothy Comingore",
+                        genre: .drama, imdbID: "tt0033467")
+
+let ghost = Movie(title: "Ghost", director: "Jerry Zucker",
+                  writer: "Bruce Joel Rubin",
+                  stars: "Patrick Swayze, Demi Moore, Whoopi Goldberg",
+                  genre: .drama, imdbID: "tt0099653")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 

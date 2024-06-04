@@ -36,6 +36,14 @@ let bookBurning = MovieScene(movie: episodeVIII,
 let flyingTroopers = MovieScene(movie: episodeIX,
                                 description: "Stormtroopers can fly now")
 
+let gingyTorture = MovieScene(movie: shrek, description: "Gingy being tortured")
+
+let snowGlobe = MovieScene(movie: citizenKane,
+                           description: "An old man drops a snow globe and says \"Rosebud\"")
+
+let potteryWheel = MovieScene(movie: ghost,
+                              description: "Molly and Sam together at the pottery wheel")
+
 let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
