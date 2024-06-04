@@ -66,17 +66,17 @@ let matrix = Movie(title: "The Matrix",
 
 let shrek = Movie(title: "Shrek",
                   director: "Andrew Adamson, Vicky Jenson",
-                  writer:"",
-                  stars:"Eddie Murphy, John Lithgow, Mike Myers",
+                  writer: "William Steig, Ted Elliott, Terry Rossio",
+                  stars: "Eddie Murphy, John Lithgow, Mike Myers",
                   genre: .comedy, imdbID: "tt0126029")
 
-let areWeDoneYet = Movie(title: "Are We Done Yet",
+let areWeDoneYet = Movie(title: "Are We Done Yet?",
                          director: "Brian Levant",
-                         writer: "Steven GarY Banks, Claudia  Grazioso",
+                         writer: "Steven Gary Banks, Claudia  Grazioso",
                          stars: "Ice Cube, Nia Long, John C. McGinley",
                          genre: .comedy, imdbID: "tt0422774")
 
-let clueLess = Movie(title: "ClueLess",
+let clueLess = Movie(title: "Clueless",
                      director: "Amy Heckerling" ,
                      writer: "Amy Heckerling",
                      stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
@@ -85,16 +85,16 @@ let clueLess = Movie(title: "ClueLess",
 let projectX = Movie(title: "Project X",
                      director: "Nima Nourizadeh",
                      writer: "Micheal Bacall, Matt Drake",
-                     stars: " Dax Flame, Miles Teller, Alexis Knapp",
+                     stars: "Dax Flame, Miles Teller, Alexis Knapp",
                      genre: .comedy, imdbID: "tt1636826")
 
 let schoolDance = Movie(title: "School Dance",
                         director: "Nick Cannon",
-                        writer: "Nick Cannon",
-                        stars: "Kat Williams, Mike Epps, Bobb'e J Thompson, Kristinan DeBarge",
+                        writer: "Nick Cannon, Nile Evans",
+                        stars: "Kat Williams, Mike Epps, Bobb'e J. Thompson, Kristinan DeBarge",
                         genre: .comedy, imdbID: "tt2179936")
 
-let familyReunion = Movie(title: "Madea Family Reunion",
+let familyReunion = Movie(title: "Madea's Family Reunion",
                           director: "Tyler Perry",
                           writer: "Tyler Perry",
                           stars: "Blair Underwood, Keke Palmer, Lynn Whitifield",
@@ -106,10 +106,6 @@ let cars = Movie(title: "Cars",
                  stars: "Bonnie Hunt, Larry the Cable Guy, Owen Wilson",
                  genre: .comedy, imdbID: "tt0317219")
 
-
-
-
-
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
@@ -117,4 +113,5 @@ let matrixMovies: [Movie] = [matrix]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 
-let comdeyMovies: [Movie] = [ cars, familyReunion, areWeDoneYet, schoolDance, projectX, clueLess, shrek]
+let comedyMovies: [Movie] = [cars, familyReunion, areWeDoneYet, schoolDance,
+                             projectX, clueLess, shrek]
