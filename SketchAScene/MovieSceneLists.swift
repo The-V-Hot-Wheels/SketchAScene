@@ -44,15 +44,23 @@ let snowGlobe = MovieScene(movie: citizenKane,
 let potteryWheel = MovieScene(movie: ghost,
                               description: "Molly and Sam together at the pottery wheel")
 
+let showerKnife = MovieScene(movie: psycho,
+                             description: "A woman is horrified in the shower at Bates Motel")
+
+let levitationNightmare = MovieScene(movie: elmStreet,
+                                     description: "Tina is levitated to the roof, bloody")
+
 let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
-let comedyScenes: [MovieScene] = []
+let comedyScenes: [MovieScene] = [gingyTorture]
 
-let dramaScenes: [MovieScene] = []
+let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 
-let horrorScenes: [MovieScene] = []
+let horrorScenes: [MovieScene] = [showerKnife]
 
+let scenes: [MovieScene] = actionScenes + comedyScenes + dramaScenes + 
+horrorScenes
 
 var moviePrompt = notDroids.sceneDescription

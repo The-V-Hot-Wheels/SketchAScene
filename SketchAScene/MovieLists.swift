@@ -116,6 +116,16 @@ let ghost = Movie(title: "Ghost", director: "Jerry Zucker",
                   stars: "Patrick Swayze, Demi Moore, Whoopi Goldberg",
                   genre: .drama, imdbID: "tt0099653")
 
+let psycho = Movie(title: "Psycho", director: "Alfred Hitchcock",
+                   writer: "Joseph Stefano, Robert Bloch",
+                   stars: "Anthony Perkins, Janet Leigh, Vera Miles",
+                   genre: .horror, imdbID: "tt0054215")
+
+let elmStreet = Movie(title: "A Nightmare on Elm Street",
+                      director: "Wes Craven", writer: "Wes Craven",
+                      stars: "Heather Langenkamp, Johnny Depp, Robert Englund",
+                      genre: .horror, imdbID: "tt0087800")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
