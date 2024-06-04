@@ -42,10 +42,15 @@ struct GenreRowView: View {
                     
                     HStack {
                         Image(systemName: "movieclapper")
-                        Text("Action")
+                        NavigationLink {
+                            GuessingView(genre: .action)
+                        } label: {
+                            Text("Action")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
-                    .font(Font.custom("kindergarten", size: 40))
-                    .foregroundColor(.appbrown)
                     
                     Divider()
                     
@@ -65,19 +70,28 @@ struct GenreRowView: View {
                     
                     HStack {
                         Image("drama")
-                        Text("Drama")
-                            .foregroundColor(.appbrown)
-                            .font(Font.custom("kindergarten", size: 40))
-                            .padding([.top, .bottom])
+                        NavigationLink {
+                            GuessingView(genre: .drama)
+                        } label: {
+                            Text("Drama")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
                     
                     Divider()
                     
                     HStack {
                         Image("horror")
-                        Text("Horror")
-                            .foregroundColor(.appbrown)
-                            .font(Font.custom("kindergarten", size: 40)).padding([.top, .bottom])
+                        NavigationLink {
+                            GuessingView(genre: .horror)
+                        } label: {
+                            Text("Horror")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
                     
                     Spacer()
