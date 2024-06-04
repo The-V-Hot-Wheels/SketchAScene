@@ -35,6 +35,7 @@
 		61852F6C2C0D6E4A009FEFF4 /* MovieLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */; };
 		61852F6E2C0D6E6D009FEFF4 /* MovieSceneLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */; };
 		61852F702C0D6EBF009FEFF4 /* MovieScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */; };
+		619354B12C0F850F00164516 /* GuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619354B02C0F850F00164516 /* GuessingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLists.swift; sourceTree = "<group>"; };
 		61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSceneLists.swift; sourceTree = "<group>"; };
 		61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScene.swift; sourceTree = "<group>"; };
+		619354B02C0F850F00164516 /* GuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */,
 				6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */,
 				613402812C0E37330016DF81 /* CanvasView.swift */,
+				619354B02C0F850F00164516 /* GuessingView.swift */,
 			);
 			path = SketchAScene;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F05DEC2C0966E70025E65D /* HelpSheetView.swift in Sources */,
+				619354B12C0F850F00164516 /* GuessingView.swift in Sources */,
 				513127BA2BFD11E10071C615 /* GenreRowView.swift in Sources */,
 				065855772C06715C00B8AEDD /* ScrumsView.swift in Sources */,
 				61852F6A2C0D6B48009FEFF4 /* Genre.swift in Sources */,

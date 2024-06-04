@@ -20,16 +20,12 @@ struct GenreRowView: View {
                 Color.appink.ignoresSafeArea()
                 VStack {
                     
-                    
                     HStack {
                         
                         Image(systemName: "questionmark.app").font(.custom("", fixedSize: 50))
                             .foregroundColor(.appbrown)
-                        
-                        
                         //flipping it to true once you tap the button
                         Button {
-                            
                             //shows how the label looks (the button)
                             helpSheetShowing = true
                         } label: {
@@ -42,66 +38,73 @@ struct GenreRowView: View {
                         HelpSheetView()
                     }
                     
-                    
                     Divider()
-                    
-                    
                     
                     HStack {
                         Image(systemName: "movieclapper")
-                        
-                        Text("Action")
-                        
+                        NavigationLink {
+                            GuessingView(genre: .action)
+                        } label: {
+                            Text("Action")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
-                    .font(Font.custom("kindergarten", size: 40))
-                    .foregroundColor(.appbrown)
+                    
                     Divider()
                     
                     HStack {
                         Image("comedy")
-                        
                         NavigationLink {
-                            TimedDrawingView(time: 60)
+                            GuessingView(genre: .comedy)
                         } label: {
                             Text("Comedy")
                                 .foregroundColor(.appbrown)
                                 .font(Font.custom("kindergarten", size: 40))
                                 .padding([.top, .bottom])
                         }
-                        
-                        
                     }
-                    Divider()
                     
+                    Divider()
                     
                     HStack {
                         Image("drama")
-                        Text("Drama")
-                            .foregroundColor(.appbrown)
-                            .font(Font.custom("kindergarten", size: 40))
-                            .padding([.top, .bottom])
+                        NavigationLink {
+                            GuessingView(genre: .drama)
+                        } label: {
+                            Text("Drama")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
+                    
                     Divider()
                     
                     HStack {
                         Image("horror")
-                        
-                        Text("Horror")
-                        
-                            .foregroundColor(.appbrown)
-                            .font(Font.custom("kindergarten", size: 40)).padding([.top, .bottom])
+                        NavigationLink {
+                            GuessingView(genre: .horror)
+                        } label: {
+                            Text("Horror")
+                                .foregroundColor(.appbrown)
+                                .font(Font.custom("kindergarten", size: 40))
+                                .padding([.top, .bottom])
+                        }
                     }
-                    
                     
                     Spacer()
                     
-                    
                 }
+                
             }
+            
         }
+        
     }
+    
 }
-
 
 #Preview {
     GenreRowView()
