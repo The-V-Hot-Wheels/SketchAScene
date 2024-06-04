@@ -9,14 +9,16 @@ import SwiftUI
 
 struct GuessingView: View {
     
-    let scenes: [MovieScene]
+    let selScenes: [MovieScene]
     
     init(genre: Genre) {
-        self.scenes = []
+        self.selScenes = scenes.filter({$0.sourceMovie.genre == genre})
+            .shuffled()
     }
     
     var body: some View {
-        Text("Draw the scene in which ")
+        Text("Draw the scene in which").bold()
+        Text(self.selScenes[0].sceneDescription).padding()
         TimedDrawingView(time: 60)
     }
     
