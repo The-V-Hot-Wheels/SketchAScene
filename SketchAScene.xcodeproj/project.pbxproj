@@ -31,6 +31,7 @@
 		610D66FA2C0903200011EF43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 610D66F92C0903200011EF43 /* LICENSE */; };
 		613402802C0E36EE0016DF81 /* TimedDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */; };
 		613402822C0E37330016DF81 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613402812C0E37330016DF81 /* CanvasView.swift */; };
+		614F5AE22C110B3500C0E47D /* GuessingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F5AE12C110B3500C0E47D /* GuessingActivity.swift */; };
 		61852F6A2C0D6B48009FEFF4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F692C0D6B48009FEFF4 /* Genre.swift */; };
 		61852F6C2C0D6E4A009FEFF4 /* MovieLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */; };
 		61852F6E2C0D6E6D009FEFF4 /* MovieSceneLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */; };
@@ -83,6 +84,7 @@
 		610D66F92C0903200011EF43 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedDrawingView.swift; sourceTree = "<group>"; };
 		613402812C0E37330016DF81 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		614F5AE12C110B3500C0E47D /* GuessingActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessingActivity.swift; sourceTree = "<group>"; };
 		61852F692C0D6B48009FEFF4 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		61852F6B2C0D6E4A009FEFF4 /* MovieLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLists.swift; sourceTree = "<group>"; };
 		61852F6D2C0D6E6D009FEFF4 /* MovieSceneLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSceneLists.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				6134027F2C0E36EE0016DF81 /* TimedDrawingView.swift */,
 				613402812C0E37330016DF81 /* CanvasView.swift */,
 				619354B02C0F850F00164516 /* GuessingView.swift */,
+				614F5AE12C110B3500C0E47D /* GuessingActivity.swift */,
 			);
 			path = SketchAScene;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				61852F6E2C0D6E6D009FEFF4 /* MovieSceneLists.swift in Sources */,
 				613402802C0E36EE0016DF81 /* TimedDrawingView.swift in Sources */,
 				065855712C064F5400B8AEDD /* DailyScrum.swift in Sources */,
+				614F5AE22C110B3500C0E47D /* GuessingActivity.swift in Sources */,
 				510529022C0A6A2B00ED54A1 /* Movie.swift in Sources */,
 				5131278D2BFBD6860071C615 /* SketchASceneApp.swift in Sources */,
 				61852F6C2C0D6E4A009FEFF4 /* MovieLists.swift in Sources */,

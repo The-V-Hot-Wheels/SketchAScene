@@ -9,21 +9,20 @@ import SwiftUI
 
 struct GuessingView: View {
     
-    let selScenes: [MovieScene]
+    let selScene: MovieScene
     
-    init(genre: Genre) {
-        self.selScenes = scenes.filter({$0.sourceMovie.genre == genre})
-            .shuffled()
+    init(scene: MovieScene) {
+        self.selScene = scene
     }
     
     var body: some View {
         Text("Draw the scene in which").bold()
-        Text(self.selScenes[0].sceneDescription).padding()
+        Text(self.selScene.sceneDescription).padding()
         TimedDrawingView(time: 60)
     }
     
 }
 
 #Preview {
-    GuessingView(genre: .action)
+    GuessingView(scene: phones)
 }
