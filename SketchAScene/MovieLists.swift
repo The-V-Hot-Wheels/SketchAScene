@@ -134,4 +134,4 @@ let matrixMovies: [Movie] = [matrix]
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 
 let comedyMovies: [Movie] = [cars, familyReunion, areWeDoneYet, schoolDance,
-                             projectX, clueLess, shrek]
+                             projectX, scaryMovie, shrek]
