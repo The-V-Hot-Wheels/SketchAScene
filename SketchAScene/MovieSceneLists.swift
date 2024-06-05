@@ -52,7 +52,7 @@ let levitationNightmare = MovieScene(movie: elmStreet,
 
 let carWash = MovieScene(movie: schoolDance, description: "Jay extra is watching Anastacia wash car throught school window")
 
-let ranger4s = MovieScene(movie: schoolDance, description: "teh rangers pull down jason pants")
+let ranger4s = MovieScene(movie: schoolDance, description: "the rangers pull down jason pants")
 
 let sevenMins = MovieScene(movie: schoolDance, description: "seven minutes in heaven")
 
@@ -72,12 +72,16 @@ let duffy = MovieScene(movie: scaryMovie, description: "duffy plays with the vac
 
 let news = MovieScene(movie: scaryMovie, description: " killer on the phone with smoky and friends")
 
+let phones = MovieScene(movie: scaryMovie, description: "sydni punches reporter in face")
+
 
 let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
-let comedyScenes: [MovieScene] = [gingyTorture]
+let comedyScenes: [MovieScene] = [gingyTorture, carWash, ranger4s, sevenMins, 
+                                  race, mater, x, px, killer, smovie, duffy,
+news, phones]
 
 let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 
