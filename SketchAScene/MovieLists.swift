@@ -76,11 +76,11 @@ let areWeDoneYet = Movie(title: "Are We Done Yet?",
                          stars: "Ice Cube, Nia Long, John C. McGinley",
                          genre: .comedy, imdbID: "tt0422774")
 
-let clueLess = Movie(title: "Clueless",
-                     director: "Amy Heckerling" ,
-                     writer: "Amy Heckerling",
-                     stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
-                     genre: .comedy, imdbID: "tt0112697")
+let scaryMovie = Movie(title: "Scary Movie",
+                     director: "Keenen Ivory Wayans" ,
+                     writer: "Shawn Wayans, Marlon Wayans, Buddy Johnson",
+                     stars: "Marlon Wayans, Regina Hall, Anna Faris, Shawn Wayans Jon Abrahams",
+                     genre: .comedy, imdbID: "tt0175142")
 
 let projectX = Movie(title: "Project X",
                      director: "Nima Nourizadeh",

@@ -50,6 +50,29 @@ let showerKnife = MovieScene(movie: psycho,
 let levitationNightmare = MovieScene(movie: elmStreet,
                                      description: "Tina is levitated to the roof, bloody")
 
+let carWash = MovieScene(movie: schoolDance, description: "Jay extra is watching Anastacia wash car throught school window")
+
+let ranger4s = MovieScene(movie: schoolDance, description: "teh rangers pull down jason pants")
+
+let sevenMins = MovieScene(movie: schoolDance, description: "seven minutes in heaven")
+
+let race = MovieScene(movie: cars, description: " mater helps lighting with his boot")
+
+let mater = MovieScene(movie: cars, description: "lighting and mater go tractor tipping ")
+
+let x = MovieScene(movie: projectX, description: " the car is drove into the pool")
+
+let px = MovieScene(movie: projectX, description: " the midget coming out the oven and fighting someone")
+
+let killer = MovieScene(movie: scaryMovie, description: " brenda granny panties")
+
+let smovie = MovieScene(movie: scaryMovie, description: " sydni push granny down the stairs")
+
+let duffy = MovieScene(movie: scaryMovie, description: "duffy plays with the vacum")
+
+let news = MovieScene(movie: scaryMovie, description: " killer on the phone with smoky and friends")
+
+
 let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
