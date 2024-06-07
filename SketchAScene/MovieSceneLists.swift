@@ -88,7 +88,7 @@ news, phones]
 
 let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 
-let horrorScenes: [MovieScene] = [showerKnife]
+let horrorScenes: [MovieScene] = [showerKnife, levitationNightmare]
 
 let scenes: [MovieScene] = actionScenes + comedyScenes + dramaScenes + 
 horrorScenes
