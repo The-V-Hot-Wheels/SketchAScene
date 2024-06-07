@@ -76,6 +76,11 @@ let areWeDoneYet = Movie(title: "Are We Done Yet?",
                          stars: "Ice Cube, Nia Long, John C. McGinley",
                          genre: .comedy, imdbID: "tt0422774")
 
+let clueless = Movie(title: "Clueless", director: "Amy Heckerling",
+                     writer: "Amy Heckerling",
+                     stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
+                     genre: .comedy, imdbID: "tt0112697")
+
 let scaryMovie = Movie(title: "Scary Movie",
                      director: "Keenen Ivory Wayans" ,
                      writer: "Shawn Wayans, Marlon Wayans, Buddy Johnson",
@@ -133,5 +138,5 @@ let matrixMovies: [Movie] = [matrix]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 
-let comedyMovies: [Movie] = [cars, familyReunion, areWeDoneYet, schoolDance,
-                             projectX, scaryMovie, shrek]
+let comedyMovies: [Movie] = [areWeDoneYet, cars, clueless, familyReunion,
+                             schoolDance, projectX, scaryMovie, shrek]

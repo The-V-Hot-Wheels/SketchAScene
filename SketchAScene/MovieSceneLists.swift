@@ -38,6 +38,9 @@ let flyingTroopers = MovieScene(movie: episodeIX,
 
 let gingyTorture = MovieScene(movie: shrek, description: "Gingy being tortured")
 
+let taisMakeover = MovieScene(movie: clueless,
+                              description: "Tai gets a makeover at Cher's house")
+
 let snowGlobe = MovieScene(movie: citizenKane,
                            description: "An old man drops a snow globe and says \"Rosebud\"")
 
