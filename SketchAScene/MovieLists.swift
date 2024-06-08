@@ -70,6 +70,29 @@ let shrek = Movie(title: "Shrek",
                   stars: "Eddie Murphy, John Lithgow, Mike Myers",
                   genre: .comedy, imdbID: "tt0126029")
 
+let shrek2 = Movie(title: "Shrek 2",
+                   director: "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+                   writer: "William Steig, Andrew Adamson, Joe Stillman",
+                   stars: "Mike Myers, Eddie Murphy, Cameron Diaz",
+                   genre: .comedy, imdbID: "tt0298148")
+
+let shrekTheThird = Movie(title: "Shrek the Third",
+                          director: "Chris Miller, Raman Hui",
+                          writer: "William Steig, Andrew Adamson, Jeffrey Price",
+                          stars: "Mike Myers, Cameron Diaz, Eddie Murphy",
+                          genre: .comedy, imdbID: "tt0413267")
+
+let shrekTheHalls = Movie(title: "Shrek the Halls", director: "Gary Trousdale",
+                          writer: "Gary Trousdale, Sean Bishop, Theresa Cullen",
+                          stars: "Mike Myers, Eddie Murphy, Cameron Diaz",
+                          genre: .comedy, imdbID: "tt0897387")
+
+let shrekForeverAfter = Movie(title: "Shrek Forever After",
+                              director: "Mike Mitchell",
+                              writer: "Josh Klausner, Darren Lemke, William Steig",
+                              stars: "Mike Myers, Cameron Diaz, Eddie Murphy",
+                              genre: .comedy, imdbID: "tt0892791")
+
 let areWeDoneYet = Movie(title: "Are We Done Yet?",
                          director: "Brian Levant",
                          writer: "Steven Gary Banks, Claudia  Grazioso",
@@ -138,5 +161,8 @@ let matrixMovies: [Movie] = [matrix]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 
+let shrekMovies: [Movie] = [shrek, shrek2, shrekTheThird, shrekTheHalls,
+                            shrekForeverAfter]
+
 let comedyMovies: [Movie] = [areWeDoneYet, cars, clueless, familyReunion,
-                             schoolDance, projectX, scaryMovie, shrek]
+                             schoolDance, projectX, scaryMovie] + shrekMovies

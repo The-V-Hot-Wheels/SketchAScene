@@ -38,6 +38,14 @@ let flyingTroopers = MovieScene(movie: episodeIX,
 
 let gingyTorture = MovieScene(movie: shrek, description: "Gingy being tortured")
 
+let copsParody = MovieScene(movie: shrek2, description: "Shrek spoof of cops")
+
+let splitPig = MovieScene(movie: shrek2,
+                          description: "Shrek and King Harold try to split a pig in half")
+
+let roastPrinceCharming = MovieScene(movie: shrekTheThird,
+                                     description: "Shrek heckles Prince Charming during a theater performance")
+
 let taisMakeover = MovieScene(movie: clueless,
                               description: "Tai gets a makeover at Cher's house")
 
@@ -82,9 +90,12 @@ let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
-let comedyScenes: [MovieScene] = [gingyTorture, carWash, ranger4s, sevenMins, 
-                                  race, mater, x, px, killer, smovie, duffy,
-news, phones]
+let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
+                                 roastPrinceCharming]
+
+let comedyScenes: [MovieScene] = [carWash, duffy, killer, mater, news, phones,
+                                  px, race, ranger4s, sevenMins, smovie, x] +
+shrekScenes
 
 let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 
