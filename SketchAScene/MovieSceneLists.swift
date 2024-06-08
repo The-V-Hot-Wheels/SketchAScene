@@ -70,29 +70,40 @@ let showerKnife = MovieScene(movie: psycho,
 let levitationNightmare = MovieScene(movie: elmStreet,
                                      description: "Tina is levitated to the roof, bloody")
 
-let carWash = MovieScene(movie: schoolDance, description: "Jay extra is watching Anastacia wash car throught school window")
+let carWash = MovieScene(movie: schoolDance,
+                         description: "Jay Extra is watching Anastacia wash car through school window")
 
-let ranger4s = MovieScene(movie: schoolDance, description: "the rangers pull down jason pants")
+let ranger4s = MovieScene(movie: schoolDance,
+                          description: "The rangers pull Jason's pants down")
 
-let sevenMins = MovieScene(movie: schoolDance, description: "seven minutes in heaven")
+let sevenMins = MovieScene(movie: schoolDance,
+                           description: "Seven minutes in heaven")
 
-let race = MovieScene(movie: cars, description: " mater helps lighting with his boot")
+let race = MovieScene(movie: cars,
+                      description: "Mater helps Lighting with his boot")
 
-let mater = MovieScene(movie: cars, description: "lighting and mater go tractor tipping ")
+let tipTractors = MovieScene(movie: cars,
+                       description: "Lighting and Mater go tractor tipping ")
 
-let x = MovieScene(movie: projectX, description: " the car is drove into the pool")
+let poolCar = MovieScene(movie: projectX,
+                         description: "Car driven into the pool")
 
-let px = MovieScene(movie: projectX, description: " the midget coming out the oven and fighting someone")
+let outOven = MovieScene(movie: projectX,
+                    description: "A midget comes out of the oven and fights someone")
 
-let killer = MovieScene(movie: scaryMovie, description: " brenda granny panties")
+let killer = MovieScene(movie: scaryMovie, description: "Brenda's granny panties")
 
-let smovie = MovieScene(movie: scaryMovie, description: " sydni push granny down the stairs")
+let smovie = MovieScene(movie: scaryMovie,
+                        description: "Cindy pushes granny down the stairs")
 
-let duffy = MovieScene(movie: scaryMovie, description: "duffy plays with the vacum")
+let duffy = MovieScene(movie: scaryMovie,
+                       description: "Duffy plays with the vacuum")
 
-let news = MovieScene(movie: scaryMovie, description: " killer on the phone with smoky and friends")
+let news = MovieScene(movie: scaryMovie,
+                      description: "Killer on the phone with Smoky and friends")
 
-let phones = MovieScene(movie: scaryMovie, description: "sydni punches reporter in face")
+let phones = MovieScene(movie: scaryMovie, 
+                        description: "Cindy punches reporter in face")
 
 let matrixScenes: [MovieScene] = [trinitySuspKick, chateauFight, thousandSmiths]
 
@@ -105,9 +116,9 @@ let actionScenes: [MovieScene] = matrixScenes + starWarsScenes
 let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
                                  roastPrinceCharming]
 
-let comedyScenes: [MovieScene] = [carWash, duffy, killer, mater, news, phones,
-                                  px, race, ranger4s, sevenMins, smovie, x] +
-shrekScenes
+let comedyScenes: [MovieScene] = [carWash, duffy, killer, news, outOven, phones,
+                                  poolCar, race, ranger4s, sevenMins, smovie,
+                                  tipTractors] + shrekScenes
 
 let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 

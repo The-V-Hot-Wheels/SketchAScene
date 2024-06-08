@@ -82,8 +82,7 @@ let matrixResurrections = Movie(title: "The Matrix Resurrections",
                                 stars: "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II",
                                 genre: .action, imdbID: "tt10838180")
 
-let shrek = Movie(title: "Shrek",
-                  director: "Andrew Adamson, Vicky Jenson",
+let shrek = Movie(title: "Shrek", director: "Andrew Adamson, Vicky Jenson",
                   writer: "William Steig, Ted Elliott, Terry Rossio",
                   stars: "Eddie Murphy, John Lithgow, Mike Myers",
                   genre: .comedy, imdbID: "tt0126029")
@@ -111,8 +110,7 @@ let shrekForeverAfter = Movie(title: "Shrek Forever After",
                               stars: "Mike Myers, Cameron Diaz, Eddie Murphy",
                               genre: .comedy, imdbID: "tt0892791")
 
-let areWeDoneYet = Movie(title: "Are We Done Yet?",
-                         director: "Brian Levant",
+let areWeDoneYet = Movie(title: "Are We Done Yet?", director: "Brian Levant",
                          writer: "Steven Gary Banks, Claudia  Grazioso",
                          stars: "Ice Cube, Nia Long, John C. McGinley",
                          genre: .comedy, imdbID: "tt0422774")
@@ -122,33 +120,29 @@ let clueless = Movie(title: "Clueless", director: "Amy Heckerling",
                      stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
                      genre: .comedy, imdbID: "tt0112697")
 
-let scaryMovie = Movie(title: "Scary Movie",
-                     director: "Keenen Ivory Wayans" ,
+let scaryMovie = Movie(title: "Scary Movie", director: "Keenen Ivory Wayans",
                      writer: "Shawn Wayans, Marlon Wayans, Buddy Johnson",
                      stars: "Marlon Wayans, Regina Hall, Anna Faris, Shawn Wayans Jon Abrahams",
                      genre: .comedy, imdbID: "tt0175142")
 
-let projectX = Movie(title: "Project X",
-                     director: "Nima Nourizadeh",
+let projectX = Movie(title: "Project X", director: "Nima Nourizadeh",
                      writer: "Micheal Bacall, Matt Drake",
                      stars: "Dax Flame, Miles Teller, Alexis Knapp",
                      genre: .comedy, imdbID: "tt1636826")
 
-let schoolDance = Movie(title: "School Dance",
-                        director: "Nick Cannon",
+let schoolDance = Movie(title: "School Dance", director: "Nick Cannon",
                         writer: "Nick Cannon, Nile Evans",
                         stars: "Kat Williams, Mike Epps, Bobb'e J. Thompson, Kristinan DeBarge",
                         genre: .comedy, imdbID: "tt2179936")
 
 let familyReunion = Movie(title: "Madea's Family Reunion",
-                          director: "Tyler Perry",
-                          writer: "Tyler Perry",
+                          director: "Tyler Perry", writer: "Tyler Perry",
                           stars: "Blair Underwood, Keke Palmer, Lynn Whitifield",
                           genre: .comedy, imdbID: "tt0455612")
 
 let cars = Movie(title: "Cars",
-                 director: " Brain Fee",
-                 writer: "John Lasseter" ,
+                 director: "John Lasseter, Joe Ranft",
+                 writer: "John Lasseter, Joe Ranft, Jorgen Klubien",
                  stars: "Bonnie Hunt, Larry the Cable Guy, Owen Wilson",
                  genre: .comedy, imdbID: "tt0317219")
 
