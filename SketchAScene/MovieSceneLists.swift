@@ -45,6 +45,10 @@ let bookBurning = MovieScene(movie: episodeVIII,
 let flyingTroopers = MovieScene(movie: episodeIX,
                                 description: "Stormtroopers can fly now")
 
+let guysShades = MovieScene(movie: freeGuy, description: "Free Guy puts on sunglasses for the first time")
+
+let guysLightsaber = MovieScene(movie: freeGuy, description: "Guy gets a lightsaber to fight 'roided up Blue Shirt Guy")
+
 let gingyTorture = MovieScene(movie: shrek, description: "Gingy being tortured")
 
 let copsParody = MovieScene(movie: shrek2, description: "Shrek spoof of cops")
@@ -111,6 +115,8 @@ let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
+let freeGuyScenes: [MovieScene] = [guysShades, guysLightsaber]
+
 let actionScenes: [MovieScene] = matrixScenes + starWarsScenes
 
 let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
@@ -118,7 +124,7 @@ let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
 
 let comedyScenes: [MovieScene] = [carWash, duffy, killer, news, outOven, phones,
                                   poolCar, race, ranger4s, sevenMins, smovie,
-                                  tipTractors] + shrekScenes
+                                  tipTractors] + freeGuyScenes + shrekScenes
 
 let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
 

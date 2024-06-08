@@ -82,6 +82,11 @@ let matrixResurrections = Movie(title: "The Matrix Resurrections",
                                 stars: "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II",
                                 genre: .action, imdbID: "tt10838180")
 
+let freeGuy = Movie(title: "Free Guy", director: "Shawn Levy",
+                    writer: "Matt Lieberman, Zak Penn",
+                    stars: "Ryan Reynolds, Jodie Comer, Taika Waititi",
+                    genre: .comedy, imdbID: "tt6264654")
+
 let shrek = Movie(title: "Shrek", director: "Andrew Adamson, Vicky Jenson",
                   writer: "William Steig, Ted Elliott, Terry Rossio",
                   stars: "Eddie Murphy, John Lithgow, Mike Myers",
