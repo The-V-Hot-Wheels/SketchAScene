@@ -64,6 +64,24 @@ let matrix = Movie(title: "The Matrix",
                    stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss", 
                    genre: .action, imdbID: "tt0133093")
 
+let matrixReloaded = Movie(title: "The Matrix Reloaded",
+                           director: "Lana Wachowski, Lilly Wachowski",
+                           writer: "Lilly Wachowski, Lana Wachowski",
+                           stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+                           genre: .action, imdbID: "tt0234215")
+
+let matrixRevolutions = Movie(title: "The Matrix Revolutions", 
+                              director: "Lana Wachowski, Lilly Wachowski",
+                              writer: "Lilly Wachowski, Lana Wachowski", 
+                              stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+                              genre: .action, imdbID: "tt0242653")
+
+let matrixResurrections = Movie(title: "The Matrix Resurrections",
+                                director: "Lana Wachowski",
+                                writer: "Lana Wachowski, David Mitchell, Aleksandar Hemon",
+                                stars: "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II",
+                                genre: .action, imdbID: "tt10838180")
+
 let shrek = Movie(title: "Shrek",
                   director: "Andrew Adamson, Vicky Jenson",
                   writer: "William Steig, Ted Elliott, Terry Rossio",
@@ -157,7 +175,8 @@ let elmStreet = Movie(title: "A Nightmare on Elm Street",
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
-let matrixMovies: [Movie] = [matrix]
+let matrixMovies: [Movie] = [matrix, matrixReloaded, matrixRevolutions,
+                             matrixResurrections]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 

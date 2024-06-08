@@ -7,6 +7,15 @@
 
 import Foundation
 
+let trinitySuspKick = MovieScene(movie: matrix,
+                                 description: "Trinity kicks while suspended in the air")
+
+let chateauFight = MovieScene(movie: matrixReloaded,
+                              description: "Neo fights the Merovingian on the chateau staircase")
+
+let thousandSmiths = MovieScene(movie: matrixRevolutions,
+                                description: "Neo fights a thousand Agents Smith")
+
 let meetJarJar = MovieScene(movie: episodeI,
                             description: "Little Anakin Skywalker meets Jar Jar Binks")
 
@@ -85,10 +94,13 @@ let news = MovieScene(movie: scaryMovie, description: " killer on the phone with
 
 let phones = MovieScene(movie: scaryMovie, description: "sydni punches reporter in face")
 
+let matrixScenes: [MovieScene] = [trinitySuspKick, chateauFight, thousandSmiths]
 
-let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
+let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
+
+let actionScenes: [MovieScene] = matrixScenes + starWarsScenes
 
 let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
                                  roastPrinceCharming]
