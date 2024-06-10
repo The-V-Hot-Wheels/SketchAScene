@@ -11,7 +11,7 @@ struct GuessingActivity: View {
     
     let selScenes: [MovieScene]
     
-    var index = 0
+    @State var index = 0
     
     init(genre: Genre) {
         self.selScenes = scenes.filter({$0.sourceMovie.genre == genre})
@@ -20,12 +20,11 @@ struct GuessingActivity: View {
     
     var body: some View {
         if index < selScenes.count {
-            GuessingView(scene: self.selScenes[index])
+            GuessingView(scene: self.selScenes[index], activity: self)
         } else {
             Text("That's a wrap")
         }
-        
-        
+                
     }
     
 }

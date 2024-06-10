@@ -11,13 +11,21 @@ import SwiftUI
 
 struct TimedDrawingView: View {
     
-    @State private var timeRemaining = 60
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State private var timeRemaining = 100
+    
+    let timer: Timer.TimerPublisher
     
     let allowedTime: TimeInterval
     
-    init(time: TimeInterval) {
+    var assocView: GuessingView
+    
+    init(time: TimeInterval, view: GuessingView) {
         self.allowedTime = time
+        self.assocView = view
+        self.timeRemaining = Int(self.allowedTime)
+        self.timer = Timer.publish(every: 1, on: .main, in: .common)
+        self.timer.connect()
+//        self.timer.autoconnect()
     }
     
     @State private var canvasView = PKCanvasView()
@@ -55,6 +63,8 @@ struct TimedDrawingView: View {
                     
                     if timeRemaining > 0 {
                         timeRemaining -= 1
+                    } else {
+                        self.assocView.assocActivity.index += 1
                     }
                 }
             
@@ -89,5 +99,5 @@ private extension TimedDrawingView {
 }
 
 #Preview {
-    TimedDrawingView(time: 60)
+    TimedDrawingView(time: 15, view: GuessingView(scene: notDroids, activity: GuessingActivity(genre: notDroids.sourceMovie.genre)))
 }

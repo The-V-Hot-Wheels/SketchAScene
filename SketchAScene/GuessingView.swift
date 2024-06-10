@@ -11,18 +11,40 @@ struct GuessingView: View {
     
     let selScene: MovieScene
     
-    init(scene: MovieScene) {
+    var assocActivity: GuessingActivity
+    
+    @State private var started: Bool = false
+    
+    @State private var completed: Bool = false
+    
+    init(scene: MovieScene, activity: GuessingActivity) {
         self.selScene = scene
+        self.assocActivity = activity
     }
     
     var body: some View {
-        Text("Draw the scene in which").bold()
-        Text(self.selScene.sceneDescription).padding()
-        TimedDrawingView(time: 60)
+        ZStack {
+            Color.appink
+                .ignoresSafeArea()
+            VStack {
+                if self.started {
+                    TimedDrawingView(time: 60, view: self)
+                } else {
+                    Text("Draw the scene in which").bold().font(Font.custom("kindergarten", size: 40))
+                    Text(self.selScene.sceneDescription).padding()
+                    //                .font(Font.custom("kindergarten", size: 40))
+                    Button(action: {
+                        started = true
+                    }, label: {
+                        Text("Start").font(Font.custom("kindergarten", size: 40))
+                    })
+                }
+            }
+        }
     }
     
 }
 
 #Preview {
-    GuessingView(scene: phones)
+    GuessingView(scene: lavaFight, activity: GuessingActivity(genre: .action))
 }
