@@ -7,6 +7,24 @@
 
 import Foundation
 
+let trinitySuspKick = MovieScene(movie: matrix,
+                                 description: "Trinity kicks while suspended in the air")
+
+let chateauFight = MovieScene(movie: matrixReloaded,
+                              description: "Neo fights the Merovingian on the chateau staircase")
+
+let thousandSmiths = MovieScene(movie: matrixRevolutions,
+                                description: "Neo fights a thousand Agents Smith")
+
+let crash = MovieScene(movie: generations,
+                       description: "Enterprise-D saucer crashes on Veridian III")
+
+let borgQueen = MovieScene(movie: firstContact, 
+                           description: "The Borg Queen appears on the Enterprise-E")
+
+let pipRemove = MovieScene(movie: insurrection,
+                           description: "Captain Picard removes the four pips off his collar")
+
 let meetJarJar = MovieScene(movie: episodeI,
                             description: "Little Anakin Skywalker meets Jar Jar Binks")
 
@@ -36,7 +54,22 @@ let bookBurning = MovieScene(movie: episodeVIII,
 let flyingTroopers = MovieScene(movie: episodeIX,
                                 description: "Stormtroopers can fly now")
 
+let guysShades = MovieScene(movie: freeGuy, description: "Free Guy puts on sunglasses for the first time")
+
+let guysLightsaber = MovieScene(movie: freeGuy, description: "Guy gets a lightsaber to fight 'roided up Blue Shirt Guy")
+
 let gingyTorture = MovieScene(movie: shrek, description: "Gingy being tortured")
+
+let copsParody = MovieScene(movie: shrek2, description: "Shrek spoof of cops")
+
+let splitPig = MovieScene(movie: shrek2,
+                          description: "Shrek and King Harold try to split a pig in half")
+
+let roastPrinceCharming = MovieScene(movie: shrekTheThird,
+                                     description: "Shrek heckles Prince Charming during a theater performance")
+
+let taisMakeover = MovieScene(movie: clueless,
+                              description: "Tai gets a makeover at Cher's house")
 
 let snowGlobe = MovieScene(movie: citizenKane,
                            description: "An old man drops a snow globe and says \"Rosebud\"")
@@ -50,42 +83,77 @@ let showerKnife = MovieScene(movie: psycho,
 let levitationNightmare = MovieScene(movie: elmStreet,
                                      description: "Tina is levitated to the roof, bloody")
 
-let carWash = MovieScene(movie: schoolDance, description: "Jay extra is watching Anastacia wash car throught school window")
+let carWash = MovieScene(movie: schoolDance,
+                         description: "Jay Extra is watching Anastacia wash car through school window")
 
-let ranger4s = MovieScene(movie: schoolDance, description: "the rangers pull down jason pants")
+let ranger4s = MovieScene(movie: schoolDance,
+                          description: "The rangers pull Jason's pants down")
 
-let sevenMins = MovieScene(movie: schoolDance, description: "seven minutes in heaven")
+let sevenMins = MovieScene(movie: schoolDance,
+                           description: "Seven minutes in heaven")
 
-let race = MovieScene(movie: cars, description: " mater helps lighting with his boot")
+let race = MovieScene(movie: cars,
+                      description: "Mater helps Lighting with his boot")
 
-let mater = MovieScene(movie: cars, description: "lighting and mater go tractor tipping ")
+let tipTractors = MovieScene(movie: cars,
+                       description: "Lighting and Mater go tractor tipping ")
 
-let x = MovieScene(movie: projectX, description: " the car is drove into the pool")
+let poolCar = MovieScene(movie: projectX,
+                         description: "Car driven into the pool")
 
-let px = MovieScene(movie: projectX, description: " the midget coming out the oven and fighting someone")
+let outOven = MovieScene(movie: projectX,
+                    description: "A midget comes out of the oven and fights someone")
 
-let killer = MovieScene(movie: scaryMovie, description: " brenda granny panties")
+let killer = MovieScene(movie: scaryMovie, description: "Brenda's granny panties")
 
-let smovie = MovieScene(movie: scaryMovie, description: " sydni push granny down the stairs")
+let smovie = MovieScene(movie: scaryMovie,
+                        description: "Cindy pushes granny down the stairs")
 
-let duffy = MovieScene(movie: scaryMovie, description: "duffy plays with the vacum")
+let duffy = MovieScene(movie: scaryMovie,
+                       description: "Duffy plays with the vacuum")
 
-let news = MovieScene(movie: scaryMovie, description: " killer on the phone with smoky and friends")
+let news = MovieScene(movie: scaryMovie,
+                      description: "Killer on the phone with Smoky and friends")
 
-let phones = MovieScene(movie: scaryMovie, description: "sydni punches reporter in face")
+let phones = MovieScene(movie: scaryMovie, 
+                        description: "Cindy punches reporter in face")
 
+let eludeBookies = MovieScene(movie: moBetterBlues,
+                              description: "Bleek floats away from the bookies he owes money to")
 
-let actionScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
+let malcolmXFloat = MovieScene(movie: malcolmX,
+                               description: "Malcolm X floats away from the Audubon Ballroom")
+
+let clubDolly = MovieScene(movie: hour25,
+                           description: "Mary floats towards Jacob at the club")
+
+let goToRobbers = MovieScene(movie: insideMan,
+                             description: "Detective Frazier goes confront the robbers after they kill a hostage")
+
+let matrixScenes: [MovieScene] = [trinitySuspKick, chateauFight, thousandSmiths]
+
+let starTrekScenes: [MovieScene] = [crash, borgQueen, pipRemove]
+
+let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
-let comedyScenes: [MovieScene] = [gingyTorture, carWash, ranger4s, sevenMins, 
-                                  race, mater, x, px, killer, smovie, duffy,
-news, phones]
+let freeGuyScenes: [MovieScene] = [guysShades, guysLightsaber]
 
-let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
+let actionScenes: [MovieScene] = [goToRobbers] + matrixScenes + starTrekScenes +
+starWarsScenes
 
-let horrorScenes: [MovieScene] = [showerKnife]
+let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
+                                 roastPrinceCharming]
+
+let comedyScenes: [MovieScene] = [carWash, duffy, killer, news, outOven, phones,
+                                  poolCar, race, ranger4s, sevenMins, smovie,
+                                  tipTractors] + freeGuyScenes + shrekScenes
+
+let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel, eludeBookies, 
+                                 malcolmXFloat, clubDolly]
+
+let horrorScenes: [MovieScene] = [showerKnife, levitationNightmare]
 
 let scenes: [MovieScene] = actionScenes + comedyScenes + dramaScenes + 
 horrorScenes

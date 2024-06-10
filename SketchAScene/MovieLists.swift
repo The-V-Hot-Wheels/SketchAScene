@@ -7,6 +7,29 @@
 
 import Foundation
 
+let generations = Movie(title: "Star Trek: Generations",
+                        director: "David Carson",
+                        writer: "Gene Roddenberry, Rick Berman, Ronald D. Moore",
+                        stars: "Patrick Stewart, William Shatner, Malcolm McDowell",
+                        genre: .action, imdbID: "tt0111280")
+
+let firstContact = Movie(title: "Star Trek: First Contact",
+                         director: "Jonathan Frakes",
+                         writer: "Gene Roddenberry, Rick Berman, Brannon Braga",
+                         stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                         genre: .action, imdbID: "tt0117731")
+
+let insurrection = Movie(title: "Star Trek: Insurrection",
+                         director: "Jonathan Frakes",
+                         writer: "Gene Roddenberry, Rick Berman, Michael Piller",
+                         stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                         genre: .action, imdbID: "tt0120844")
+
+let nemesis = Movie(title: "Star Trek: Nemesis", director: "Stuart Baird",
+                    writer: "Gene Roddenberry, John Logan, Rick Berman",
+                    stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                    genre: .action, imdbID: "tt0253754")
+
 let episodeI = Movie(title: "Star Wars: Episode I &mdash; The Phantom Menace",
                      director: "George Lucas", writer: "George Lucas",
                      stars: "Ewan McGregor, Liam Neeson, Natalie Portman",
@@ -64,45 +87,90 @@ let matrix = Movie(title: "The Matrix",
                    stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss", 
                    genre: .action, imdbID: "tt0133093")
 
-let shrek = Movie(title: "Shrek",
-                  director: "Andrew Adamson, Vicky Jenson",
+let matrixReloaded = Movie(title: "The Matrix Reloaded",
+                           director: "Lana Wachowski, Lilly Wachowski",
+                           writer: "Lilly Wachowski, Lana Wachowski",
+                           stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+                           genre: .action, imdbID: "tt0234215")
+
+let matrixRevolutions = Movie(title: "The Matrix Revolutions", 
+                              director: "Lana Wachowski, Lilly Wachowski",
+                              writer: "Lilly Wachowski, Lana Wachowski", 
+                              stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+                              genre: .action, imdbID: "tt0242653")
+
+let matrixResurrections = Movie(title: "The Matrix Resurrections",
+                                director: "Lana Wachowski",
+                                writer: "Lana Wachowski, David Mitchell, Aleksandar Hemon",
+                                stars: "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II",
+                                genre: .action, imdbID: "tt10838180")
+
+let freeGuy = Movie(title: "Free Guy", director: "Shawn Levy",
+                    writer: "Matt Lieberman, Zak Penn",
+                    stars: "Ryan Reynolds, Jodie Comer, Taika Waititi",
+                    genre: .comedy, imdbID: "tt6264654")
+
+let shrek = Movie(title: "Shrek", director: "Andrew Adamson, Vicky Jenson",
                   writer: "William Steig, Ted Elliott, Terry Rossio",
                   stars: "Eddie Murphy, John Lithgow, Mike Myers",
                   genre: .comedy, imdbID: "tt0126029")
 
-let areWeDoneYet = Movie(title: "Are We Done Yet?",
-                         director: "Brian Levant",
+let shrek2 = Movie(title: "Shrek 2",
+                   director: "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+                   writer: "William Steig, Andrew Adamson, Joe Stillman",
+                   stars: "Mike Myers, Eddie Murphy, Cameron Diaz",
+                   genre: .comedy, imdbID: "tt0298148")
+
+let shrekTheThird = Movie(title: "Shrek the Third",
+                          director: "Chris Miller, Raman Hui",
+                          writer: "William Steig, Andrew Adamson, Jeffrey Price",
+                          stars: "Mike Myers, Cameron Diaz, Eddie Murphy",
+                          genre: .comedy, imdbID: "tt0413267")
+
+let shrekTheHalls = Movie(title: "Shrek the Halls", director: "Gary Trousdale",
+                          writer: "Gary Trousdale, Sean Bishop, Theresa Cullen",
+                          stars: "Mike Myers, Eddie Murphy, Cameron Diaz",
+                          genre: .comedy, imdbID: "tt0897387")
+
+let shrekForeverAfter = Movie(title: "Shrek Forever After",
+                              director: "Mike Mitchell",
+                              writer: "Josh Klausner, Darren Lemke, William Steig",
+                              stars: "Mike Myers, Cameron Diaz, Eddie Murphy",
+                              genre: .comedy, imdbID: "tt0892791")
+
+let areWeDoneYet = Movie(title: "Are We Done Yet?", director: "Brian Levant",
                          writer: "Steven Gary Banks, Claudia  Grazioso",
                          stars: "Ice Cube, Nia Long, John C. McGinley",
                          genre: .comedy, imdbID: "tt0422774")
 
-let scaryMovie = Movie(title: "Scary Movie",
-                     director: "Keenen Ivory Wayans" ,
+let clueless = Movie(title: "Clueless", director: "Amy Heckerling",
+                     writer: "Amy Heckerling",
+                     stars: "Alicia Sliverstone, Paul Rudd, Stacey Dash",
+                     genre: .comedy, imdbID: "tt0112697")
+
+let scaryMovie = Movie(title: "Scary Movie", director: "Keenen Ivory Wayans",
                      writer: "Shawn Wayans, Marlon Wayans, Buddy Johnson",
                      stars: "Marlon Wayans, Regina Hall, Anna Faris, Shawn Wayans Jon Abrahams",
                      genre: .comedy, imdbID: "tt0175142")
 
-let projectX = Movie(title: "Project X",
-                     director: "Nima Nourizadeh",
+let projectX = Movie(title: "Project X", director: "Nima Nourizadeh",
                      writer: "Micheal Bacall, Matt Drake",
                      stars: "Dax Flame, Miles Teller, Alexis Knapp",
                      genre: .comedy, imdbID: "tt1636826")
 
-let schoolDance = Movie(title: "School Dance",
-                        director: "Nick Cannon",
+let schoolDance = Movie(title: "School Dance", director: "Nick Cannon",
                         writer: "Nick Cannon, Nile Evans",
                         stars: "Kat Williams, Mike Epps, Bobb'e J. Thompson, Kristinan DeBarge",
                         genre: .comedy, imdbID: "tt2179936")
 
 let familyReunion = Movie(title: "Madea's Family Reunion",
-                          director: "Tyler Perry",
-                          writer: "Tyler Perry",
+                          director: "Tyler Perry", writer: "Tyler Perry",
                           stars: "Blair Underwood, Keke Palmer, Lynn Whitifield",
                           genre: .comedy, imdbID: "tt0455612")
 
 let cars = Movie(title: "Cars",
-                 director: " Brain Fee",
-                 writer: "John Lasseter" ,
+                 director: "John Lasseter, Joe Ranft",
+                 writer: "John Lasseter, Joe Ranft, Jorgen Klubien",
                  stars: "Bonnie Hunt, Larry the Cable Guy, Owen Wilson",
                  genre: .comedy, imdbID: "tt0317219")
 
@@ -126,12 +194,36 @@ let elmStreet = Movie(title: "A Nightmare on Elm Street",
                       stars: "Heather Langenkamp, Johnny Depp, Robert Englund",
                       genre: .horror, imdbID: "tt0087800")
 
+let moBetterBlues = Movie(title: "Mo' Better Blues", director: "Spike Lee",
+                          writer: "Spike Lee",
+                          stars: "Denzel Washington, Spike Lee, Wesley Snipes",
+                          genre: .drama, imdbID: "tt0100168")
+
+let malcolmX = Movie(title: "Malcolm X", director: "Spike Lee",
+                     writer: "Arnold Perl, Spike Lee, Alex Haley",
+                     stars: "Denzel Washington, Angela Bassett, Delroy Lindo",
+                     genre: .drama, imdbID: "tt0104797")
+
+let hour25 = Movie(title: "25th Hour", director: "Spike Lee",
+                   writer: "David Benioff",
+                   stars: "Edward Norton, Barry Pepper, Philip Seymour Hoffman",
+                   genre: .drama, imdbID: "tt0307901")
+
+let insideMan = Movie(title: "Inside Man", director: "Spike Lee", 
+                      writer: "Russell Gewirtz",
+                      stars: "Denzel Washington, Clive Owen, Jodie Foster",
+                      genre: .action, imdbID: "tt0454848")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 
-let matrixMovies: [Movie] = [matrix]
+let matrixMovies: [Movie] = [matrix, matrixReloaded, matrixRevolutions,
+                             matrixResurrections]
 
 let actionMovies: [Movie] = starWarsMovies + matrixMovies
 
-let comedyMovies: [Movie] = [cars, familyReunion, areWeDoneYet, schoolDance,
-                             projectX, scaryMovie, shrek]
+let shrekMovies: [Movie] = [shrek, shrek2, shrekTheThird, shrekTheHalls,
+                            shrekForeverAfter]
+
+let comedyMovies: [Movie] = [areWeDoneYet, cars, clueless, familyReunion,
+                             schoolDance, projectX, scaryMovie] + shrekMovies
