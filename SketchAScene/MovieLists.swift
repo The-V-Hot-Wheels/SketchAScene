@@ -171,6 +171,26 @@ let elmStreet = Movie(title: "A Nightmare on Elm Street",
                       stars: "Heather Langenkamp, Johnny Depp, Robert Englund",
                       genre: .horror, imdbID: "tt0087800")
 
+let moBetterBlues = Movie(title: "Mo' Better Blues", director: "Spike Lee",
+                          writer: "Spike Lee",
+                          stars: "Denzel Washington, Spike Lee, Wesley Snipes",
+                          genre: .drama, imdbID: "tt0100168")
+
+let malcolmX = Movie(title: "Malcolm X", director: "Spike Lee",
+                     writer: "Arnold Perl, Spike Lee, Alex Haley",
+                     stars: "Denzel Washington, Angela Bassett, Delroy Lindo",
+                     genre: .drama, imdbID: "tt0104797")
+
+let hour25 = Movie(title: "25th Hour", director: "Spike Lee",
+                   writer: "David Benioff",
+                   stars: "Edward Norton, Barry Pepper, Philip Seymour Hoffman",
+                   genre: .drama, imdbID: "tt0307901")
+
+let insideMan = Movie(title: "Inside Man", director: "Spike Lee", 
+                      writer: "Russell Gewirtz",
+                      stars: "Denzel Washington, Clive Owen, Jodie Foster",
+                      genre: .action, imdbID: "tt0454848")
+
 let starWarsMovies: [Movie] = [episodeI, episodeII, episodeIII, episodeIV,
                                episodeV, episodeVI]
 

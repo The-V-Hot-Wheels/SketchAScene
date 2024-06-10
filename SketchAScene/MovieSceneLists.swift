@@ -109,6 +109,18 @@ let news = MovieScene(movie: scaryMovie,
 let phones = MovieScene(movie: scaryMovie, 
                         description: "Cindy punches reporter in face")
 
+let eludeBookies = MovieScene(movie: moBetterBlues,
+                              description: "Bleek floats away from the bookies he owes money to")
+
+let malcolmXFloat = MovieScene(movie: malcolmX,
+                               description: "Malcolm X floats away from the Audubon Ballroom")
+
+let clubDolly = MovieScene(movie: hour25,
+                           description: "Mary floats towards Jacob at the club")
+
+let goToRobbers = MovieScene(movie: insideMan,
+                             description: "Detective Frazier goes confront the robbers after they kill a hostage")
+
 let matrixScenes: [MovieScene] = [trinitySuspKick, chateauFight, thousandSmiths]
 
 let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
@@ -117,7 +129,7 @@ let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids
 
 let freeGuyScenes: [MovieScene] = [guysShades, guysLightsaber]
 
-let actionScenes: [MovieScene] = matrixScenes + starWarsScenes
+let actionScenes: [MovieScene] = [goToRobbers] + matrixScenes + starWarsScenes
 
 let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
                                  roastPrinceCharming]
@@ -126,7 +138,8 @@ let comedyScenes: [MovieScene] = [carWash, duffy, killer, news, outOven, phones,
                                   poolCar, race, ranger4s, sevenMins, smovie,
                                   tipTractors] + freeGuyScenes + shrekScenes
 
-let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel]
+let dramaScenes: [MovieScene] = [snowGlobe, potteryWheel, eludeBookies, 
+                                 malcolmXFloat, clubDolly]
 
 let horrorScenes: [MovieScene] = [showerKnife, levitationNightmare]
 
