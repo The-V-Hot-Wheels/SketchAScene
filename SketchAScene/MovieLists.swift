@@ -7,6 +7,29 @@
 
 import Foundation
 
+let generations = Movie(title: "Star Trek: Generations",
+                        director: "David Carson",
+                        writer: "Gene Roddenberry, Rick Berman, Ronald D. Moore",
+                        stars: "Patrick Stewart, William Shatner, Malcolm McDowell",
+                        genre: .action, imdbID: "tt0111280")
+
+let firstContact = Movie(title: "Star Trek: First Contact",
+                         director: "Jonathan Frakes",
+                         writer: "Gene Roddenberry, Rick Berman, Brannon Braga",
+                         stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                         genre: .action, imdbID: "tt0117731")
+
+let insurrection = Movie(title: "Star Trek: Insurrection",
+                         director: "Jonathan Frakes",
+                         writer: "Gene Roddenberry, Rick Berman, Michael Piller",
+                         stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                         genre: .action, imdbID: "tt0120844")
+
+let nemesis = Movie(title: "Star Trek: Nemesis", director: "Stuart Baird",
+                    writer: "Gene Roddenberry, John Logan, Rick Berman",
+                    stars: "Patrick Stewart, Jonathan Frakes, Brent Spiner",
+                    genre: .action, imdbID: "tt0253754")
+
 let episodeI = Movie(title: "Star Wars: Episode I &mdash; The Phantom Menace",
                      director: "George Lucas", writer: "George Lucas",
                      stars: "Ewan McGregor, Liam Neeson, Natalie Portman",

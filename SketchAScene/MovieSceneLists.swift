@@ -16,6 +16,15 @@ let chateauFight = MovieScene(movie: matrixReloaded,
 let thousandSmiths = MovieScene(movie: matrixRevolutions,
                                 description: "Neo fights a thousand Agents Smith")
 
+let crash = MovieScene(movie: generations,
+                       description: "Enterprise-D saucer crashes on Veridian III")
+
+let borgQueen = MovieScene(movie: firstContact, 
+                           description: "The Borg Queen appears on the Enterprise-E")
+
+let pipRemove = MovieScene(movie: insurrection,
+                           description: "Captain Picard removes the four pips off his collar")
+
 let meetJarJar = MovieScene(movie: episodeI,
                             description: "Little Anakin Skywalker meets Jar Jar Binks")
 
@@ -123,13 +132,16 @@ let goToRobbers = MovieScene(movie: insideMan,
 
 let matrixScenes: [MovieScene] = [trinitySuspKick, chateauFight, thousandSmiths]
 
+let starTrekScenes: [MovieScene] = [crash, borgQueen, pipRemove]
+
 let starWarsScenes: [MovieScene] = [meetJarJar, appleFloat, lavaFight, notDroids,
                                   yourFather, trap, huxHitler, bookBurning,
                                   flyingTroopers]
 
 let freeGuyScenes: [MovieScene] = [guysShades, guysLightsaber]
 
-let actionScenes: [MovieScene] = [goToRobbers] + matrixScenes + starWarsScenes
+let actionScenes: [MovieScene] = [goToRobbers] + matrixScenes + starTrekScenes +
+starWarsScenes
 
 let shrekScenes: [MovieScene] = [gingyTorture, copsParody, splitPig,
                                  roastPrinceCharming]
