@@ -64,7 +64,7 @@ struct TimedDrawingView: View {
                     if timeRemaining > 0 {
                         timeRemaining -= 1
                     } else {
-                        self.assocView.assocActivity.index += 1
+                        self.assocView.markCompleted()
                     }
                 }
             

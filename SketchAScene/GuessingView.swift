@@ -27,20 +27,38 @@ struct GuessingView: View {
             Color.appink
                 .ignoresSafeArea()
             VStack {
-                if self.started {
+                if self.started && !completed {
                     TimedDrawingView(time: 60, view: self)
                 } else {
-                    Text("Draw the scene in which").bold().font(Font.custom("kindergarten", size: 40))
-                    Text(self.selScene.sceneDescription).padding()
-                    //                .font(Font.custom("kindergarten", size: 40))
-                    Button(action: {
-                        started = true
-                    }, label: {
-                        Text("Start").font(Font.custom("kindergarten", size: 40))
-                    })
+                    if !completed {
+                        Text("Draw the scene in which").bold().font(Font.custom("kindergarten", size: 40))
+                        Text(self.selScene.sceneDescription).padding()
+                        //                .font(Font.custom("kindergarten", size: 40))
+                        Button(action: {
+                            started = true
+                        }, label: {
+                            Text("Start").font(Font.custom("kindergarten", size: 40))
+                        })
+                    } else {
+                        VStack {
+                            Text("The movie is").bold().font(Font.custom("Kindergarten", size: 40))
+                            Text(self.selScene.sourceMovie.title).italic()
+                            if self.assocActivity.moreScenes() {
+                                Button(action: {
+                                    self.assocActivity.advance()
+                                }, label: {
+                                    Text("Next").font(Font.custom("Kindergarten", size: 40))
+                                })
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+    
+    func markCompleted() {
+        self.completed = true
     }
     
 }

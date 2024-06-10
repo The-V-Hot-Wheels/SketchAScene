@@ -18,8 +18,16 @@ struct GuessingActivity: View {
             .shuffled()
     }
     
+    func moreScenes() -> Bool {
+        self.index < (self.selScenes.count - 1)
+    }
+    
+    func advance() {
+        self.index += 1
+    }
+    
     var body: some View {
-        if index < selScenes.count {
+        if moreScenes() {
             GuessingView(scene: self.selScenes[index], activity: self)
         } else {
             Text("That's a wrap")
