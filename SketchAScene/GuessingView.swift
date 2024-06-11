@@ -13,13 +13,15 @@ struct GuessingView: View {
     
     var assocActivity: GuessingActivity
     
-    @State private var started: Bool = false
+    @State private var started: Bool
     
-    @State private var completed: Bool = false
+    @State private var completed: Bool
     
     init(scene: MovieScene, activity: GuessingActivity) {
         self.selScene = scene
         self.assocActivity = activity
+        self.started = false
+        self.completed = false
     }
     
     var body: some View {
@@ -46,6 +48,8 @@ struct GuessingView: View {
                             if self.assocActivity.moreScenes() {
                                 Button(action: {
                                     self.assocActivity.advance()
+                                    self.started = false
+                                    self.completed = false
                                 }, label: {
                                     Text("Next").font(Font.custom("Kindergarten", size: 40))
                                 })
