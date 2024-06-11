@@ -16,7 +16,7 @@ struct ContentView: View {
                 Color.appink
                     .ignoresSafeArea()
                 VStack {
-                    Text("Sketch-A-Scene ")
+                    Text("Sketch-A-Scene")
                         .font(Font.custom("kindergarten", size: 50))
                         .font(.largeTitle)
                         .padding(20)

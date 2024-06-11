@@ -24,7 +24,7 @@ struct TimedDrawingView: View {
         self.assocView = view
         self.timeRemaining = Int(self.allowedTime)
         self.timer = Timer.publish(every: 1, on: .main, in: .common)
-        self.timer.connect()
+        _ = self.timer.connect()
     }
     
     @State private var canvasView = PKCanvasView()
@@ -51,7 +51,8 @@ struct TimedDrawingView: View {
                     .padding(20.0)
             }
                 .onReceive(timer) { time in
-                    guard isActive else { return
+                    guard isActive else { 
+                        return
                     }
                     if timeRemaining > 0 {
                         timeRemaining -= 1
