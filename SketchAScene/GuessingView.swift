@@ -35,7 +35,6 @@ struct GuessingView: View {
                     if !completed {
                         Text("Draw the scene in which").bold().font(Font.custom("kindergarten", size: 40))
                         Text(self.selScene.sceneDescription).padding()
-                        //                .font(Font.custom("kindergarten", size: 40))
                         Button(action: {
                             started = true
                         }, label: {

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct TimedDrawingView: View {
     
-    @State private var timeRemaining = 100
+    @State private var timeRemaining: Int
     
     let timer: Timer.TimerPublisher
     
@@ -25,7 +25,6 @@ struct TimedDrawingView: View {
         self.timeRemaining = Int(self.allowedTime)
         self.timer = Timer.publish(every: 1, on: .main, in: .common)
         self.timer.connect()
-//        self.timer.autoconnect()
     }
     
     @State private var canvasView = PKCanvasView()
@@ -40,10 +39,7 @@ struct TimedDrawingView: View {
     
     var body: some View {
         ZStack {
-            
-            
             VStack {
-                
                 Text("Time: \(timeRemaining)")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
@@ -51,23 +47,18 @@ struct TimedDrawingView: View {
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.75))
                     .clipShape(.capsule)
-                
-                
                 CanvasView(canvasView: $canvasView, onSaved: saveDrawing)
                     .padding(20.0)
-                
             }
-        
                 .onReceive(timer) { time in
-                    guard isActive else { return }
-                    
+                    guard isActive else { return
+                    }
                     if timeRemaining > 0 {
                         timeRemaining -= 1
                     } else {
                         self.assocView.markCompleted()
                     }
                 }
-            
                 .onChange(of: scenePhase) {
                     if scenePhase == .active {
                         isActive = true
@@ -75,13 +66,13 @@ struct TimedDrawingView: View {
                         isActive = false
                     }
                 }
-            
                 .padding()
-            
         }
         
     }
+    
 }
+
 private extension TimedDrawingView {
     
     func saveDrawing() {
