@@ -11,13 +11,20 @@ import SwiftUI
 
 struct TimedDrawingView: View {
     
-    @State private var timeRemaining = 60
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State private var timeRemaining: Int
+    
+    let timer: Timer.TimerPublisher
     
     let allowedTime: TimeInterval
     
-    init(time: TimeInterval) {
+    var assocView: GuessingView
+    
+    init(time: TimeInterval, view: GuessingView) {
         self.allowedTime = time
+        self.assocView = view
+        self.timeRemaining = Int(self.allowedTime)
+        self.timer = Timer.publish(every: 1, on: .main, in: .common)
+        _ = self.timer.connect()
     }
     
     @State private var canvasView = PKCanvasView()
@@ -32,10 +39,7 @@ struct TimedDrawingView: View {
     
     var body: some View {
         ZStack {
-            
-            
             VStack {
-                
                 Text("Time: \(timeRemaining)")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
@@ -43,21 +47,19 @@ struct TimedDrawingView: View {
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.75))
                     .clipShape(.capsule)
-                
-                
                 CanvasView(canvasView: $canvasView, onSaved: saveDrawing)
                     .padding(20.0)
-                
             }
-        
                 .onReceive(timer) { time in
-                    guard isActive else { return }
-                    
+                    guard isActive else { 
+                        return
+                    }
                     if timeRemaining > 0 {
                         timeRemaining -= 1
+                    } else {
+                        self.assocView.markCompleted()
                     }
                 }
-            
                 .onChange(of: scenePhase) {
                     if scenePhase == .active {
                         isActive = true
@@ -65,13 +67,13 @@ struct TimedDrawingView: View {
                         isActive = false
                     }
                 }
-            
                 .padding()
-            
         }
         
     }
+    
 }
+
 private extension TimedDrawingView {
     
     func saveDrawing() {
@@ -89,5 +91,5 @@ private extension TimedDrawingView {
 }
 
 #Preview {
-    TimedDrawingView(time: 60)
+    TimedDrawingView(time: 15, view: GuessingView(scene: notDroids, activity: GuessingActivity(genre: notDroids.sourceMovie.genre)))
 }

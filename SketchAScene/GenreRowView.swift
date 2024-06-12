@@ -43,7 +43,7 @@ struct GenreRowView: View {
                     HStack {
                         Image(systemName: "movieclapper")
                         NavigationLink {
-                            GuessingView(genre: .action)
+                            GuessingActivity(genre: .action)
                         } label: {
                             Text("Action")
                                 .foregroundColor(.appbrown)
@@ -57,7 +57,7 @@ struct GenreRowView: View {
                     HStack {
                         Image("comedy")
                         NavigationLink {
-                            GuessingView(genre: .comedy)
+                            GuessingActivity(genre: .comedy)
                         } label: {
                             Text("Comedy")
                                 .foregroundColor(.appbrown)
@@ -71,7 +71,7 @@ struct GenreRowView: View {
                     HStack {
                         Image("drama")
                         NavigationLink {
-                            GuessingView(genre: .drama)
+                            GuessingActivity(genre: .drama)
                         } label: {
                             Text("Drama")
                                 .foregroundColor(.appbrown)
@@ -85,7 +85,7 @@ struct GenreRowView: View {
                     HStack {
                         Image("horror")
                         NavigationLink {
-                            GuessingView(genre: .horror)
+                            GuessingActivity(genre: .horror)
                         } label: {
                             Text("Horror")
                                 .foregroundColor(.appbrown)
@@ -109,4 +109,3 @@ struct GenreRowView: View {
 #Preview {
     GenreRowView()
 }
-
