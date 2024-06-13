@@ -33,7 +33,7 @@ struct ContentView: View {
                     .clipShape(.capsule)
                 
                 Text("Sketch-A-Scene ")
-                    .font(Font.custom("kindergarten", size: 50))
+                    .font(Font.custom("kindergarten", size: 100))
                     .font(.largeTitle)
                     .padding(20)
                     .foregroundColor(.appbrown)
@@ -41,7 +41,7 @@ struct ContentView: View {
               
                 
                 Text("Pick A Genre")
-                    .font(Font.custom("kindergarten", size: 32))
+                    .font(Font.custom("kindergarten", size: 50))
                     .font(.title)
                     .padding(70)
                     .foregroundColor(.appbrown)
