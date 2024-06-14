@@ -34,7 +34,7 @@ struct GuessingView: View {
                 } else {
                     if !completed {
                         Text("Draw the scene in which").bold().font(Font.custom("kindergarten", size: 40))
-                        Text(self.selScene.sceneDescription).padding()
+                        Text(self.selScene.sceneDescription).font(.largeTitle).padding()
                         Button(action: {
                             started = true
                         }, label: {
@@ -43,7 +43,7 @@ struct GuessingView: View {
                     } else {
                         VStack {
                             Text("The movie is").bold().font(Font.custom("Kindergarten", size: 40))
-                            Text(self.selScene.sourceMovie.title).italic()
+                            Text(self.selScene.sourceMovie.title).italic().font(.largeTitle)
                             if self.assocActivity.moreScenes() {
                                 Button(action: {
                                     self.assocActivity.advance()
