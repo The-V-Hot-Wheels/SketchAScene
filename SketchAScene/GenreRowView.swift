@@ -9,15 +9,19 @@ import SwiftUI
 
 struct GenreRowView: View {
     
-    @State private var helpSheetShowing: Bool = false
-
+    
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 Color.appink.ignoresSafeArea()
-                VStack {
-                    Divider()
+                VStack { 
                     HStack {
+                    
+                        
+                        
+                       
+                        
                         Image(systemName: "movieclapper").resizable().frame(width: 48, height: 48)
                         NavigationLink {
                             GuessingActivity(genre: .action)
@@ -64,27 +68,20 @@ struct GenreRowView: View {
                                 .padding([.top, .bottom])
                         }
                     }
-                    Spacer()
-                    HStack {
-                        Image(systemName: "questionmark.app").font(.custom("", fixedSize: 50))
-                            .foregroundColor(.appbrown)
-                        Button {
-                            helpSheetShowing = true
-                        } label: {
-                            Text("Help")
-                                .font(Font.custom("kindergarten", size: 40)).padding([.top,.bottom])
-                                .foregroundColor(.appbrown)
-                        }
+                   Spacer()
+                    
+                  
+                   
                     }
-                    .sheet(isPresented: $helpSheetShowing) {
-                        HelpSheetView()
-                    }
+                }
                 }
             }
         }
-    }
+        
+        
+        
+       
     
-}
 
 #Preview {
     GenreRowView()
