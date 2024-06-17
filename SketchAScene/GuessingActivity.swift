@@ -31,6 +31,12 @@ struct GuessingActivity: View {
             GuessingView(scene: self.selScenes[index], activity: self)
         } else {
             Text("That's a wrap")
+            NavigationLink {
+                EndCreditsView()
+            } label: {
+                Text("Watch end credits")
+                    .font(Font.custom("kindergarten", size: 40))
+            }
         }
                 
     }
