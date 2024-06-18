@@ -17,7 +17,6 @@ struct EndCreditsView: View {
         Text("Asia Merriweather").font(.largeTitle)
         Spacer()
         Text("Programmers").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-        Text("Designers").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         Text("Alonso del Arte").font(.largeTitle)
         Text("Jamar Morgan").font(.largeTitle)
     }
