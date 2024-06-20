@@ -39,6 +39,7 @@
 		61852F702C0D6EBF009FEFF4 /* MovieScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61852F6F2C0D6EBF009FEFF4 /* MovieScene.swift */; };
 		619111902C24C68800FC876C /* DrawingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191118F2C24C68800FC876C /* DrawingStore.swift */; };
 		619111922C24C7C900FC876C /* DrawingStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619111912C24C7C900FC876C /* DrawingStoreTests.swift */; };
+		619111932C24CDFA00FC876C /* DrawingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191118F2C24C68800FC876C /* DrawingStore.swift */; };
 		619354B12C0F850F00164516 /* GuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619354B02C0F850F00164516 /* GuessingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -393,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619111932C24CDFA00FC876C /* DrawingStore.swift in Sources */,
 				619111922C24C7C900FC876C /* DrawingStoreTests.swift in Sources */,
 				5131279E2BFBD6870071C615 /* SketchASceneTests.swift in Sources */,
 			);
