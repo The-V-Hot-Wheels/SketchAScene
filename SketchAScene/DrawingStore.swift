@@ -16,10 +16,8 @@ struct DrawingStore {
         drawings.append(drawing)
     }
     
-    // TODO: Write tests for this
     static func retrieveDrawings() -> [UIImage] {
-        let array: [UIImage] = []
-        return array
+        drawings
     }
     
     static func clear() {
