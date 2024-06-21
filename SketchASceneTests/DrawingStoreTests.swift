@@ -32,5 +32,18 @@ final class DrawingStoreTests: XCTestCase {
         let actual = DrawingStore.retrieveDrawings()
         XCTAssertEqual(expected, actual)
     }
+    
+    func testClear() {
+        let image1 = UIImage(named: "comedy")
+        let image2 = UIImage(named: "drama")
+        let image3 = UIImage(named: "horror")
+        DrawingStore.addDrawing(image1!)
+        DrawingStore.addDrawing(image2!)
+        DrawingStore.addDrawing(image3!)
+        DrawingStore.clear()
+        let expected: [UIImage] = []
+        let actual = DrawingStore.drawings
+        XCTAssertEqual(expected, actual)
+    }
 
 }
