@@ -13,7 +13,7 @@ struct DrawingStore {
     static var drawings: [UIImage] = []
     
     static func addDrawing(_ drawing: UIImage) {
-        // TODO: Write tests for this
+        drawings.append(drawing)
     }
     
     // TODO: Write tests for this
