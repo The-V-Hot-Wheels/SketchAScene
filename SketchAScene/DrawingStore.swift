@@ -21,7 +21,7 @@ struct DrawingStore {
     }
     
     static func clear() {
-        // TODO: Write tests for this
+        drawings = []
     }
     
 }
