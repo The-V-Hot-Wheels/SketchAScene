@@ -9,19 +9,12 @@ import SwiftUI
 
 struct GenreRowView: View {
     
-    
-    
     var body: some View {
         NavigationStack {
             ZStack {
                 Color.appink.ignoresSafeArea()
-                VStack { 
+                VStack {
                     HStack {
-                    
-                        
-                        
-                       
-                        
                         Image(systemName: "movieclapper").resizable().frame(width: 48, height: 48)
                         NavigationLink {
                             GuessingActivity(genre: .action)
@@ -68,21 +61,14 @@ struct GenreRowView: View {
                                 .padding([.top, .bottom])
                         }
                     }
-                   Spacer()
-                    
-                  
-                   
-                    }
-                }
+                    Spacer()
                 }
             }
         }
-        
-        
-        
-       
+    }
     
-
+}
+        
 #Preview {
     GenreRowView()
 }

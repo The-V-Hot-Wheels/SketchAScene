@@ -57,6 +57,7 @@ struct TimedDrawingView: View {
                     if timeRemaining > 0 {
                         timeRemaining -= 1
                     } else {
+                        self.saveDrawing()
                         self.assocView.markCompleted()
                     }
                 }
@@ -77,7 +78,8 @@ struct TimedDrawingView: View {
 private extension TimedDrawingView {
     
     func saveDrawing() {
-      // TODO: Save Drawing
+        let image = self.canvasView.drawing.image(from: self.canvasView.bounds, scale: UIScreen.main.scale)
+        DrawingStore.addDrawing(image)
     }
 
     func deleteDrawing() {

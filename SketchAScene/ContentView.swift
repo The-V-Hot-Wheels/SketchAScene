@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var helpSheetShowing: Bool = false
+    
     var body: some View {
-        
         NavigationStack {
             ZStack {
                 Color.appink
@@ -27,11 +28,7 @@ struct ContentView: View {
                         .padding(70)
                         .foregroundColor(.appbrown)
                         .padding([.top, .bottom])
-                    
-                    
-                    
-                    GenreRowView()
-                        .frame(height: 400)
+                    GenreRowView().frame(height: 400)
                     Image(systemName: "questionmark.app").font(.custom("", fixedSize: 50))
                         .foregroundColor(.appbrown)
                     Button {
@@ -44,8 +41,6 @@ struct ContentView: View {
                 }
                 .sheet(isPresented: $helpSheetShowing) {
                     HelpSheetView()
-
-                    
                 }
             }
         }
