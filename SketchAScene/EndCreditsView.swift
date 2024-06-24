@@ -11,11 +11,11 @@ struct EndCreditsView: View {
     var body: some View {
         Text("Project Manager").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         Text("Ayme Head").font(.largeTitle)
-        Spacer()
+        Image(uiImage: DrawingStore.drawings[0])
         Text("Designers").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         Text("Tyler Fantow").font(.largeTitle)
         Text("Asia Merriweather").font(.largeTitle)
-        Spacer()
+        Image(uiImage: DrawingStore.drawings[1])
         Text("Programmers").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         Text("Alonso del Arte").font(.largeTitle)
         Text("Jamar Morgan").font(.largeTitle)
